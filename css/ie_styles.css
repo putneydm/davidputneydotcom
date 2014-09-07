@@ -1,0 +1,9 @@
+div {
+  border: 1px solid red; }
+
+.hero-art {
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../siteart/cruxbg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../siteart/cruxbg.jpg',
+sizingMethod='scale')"; }

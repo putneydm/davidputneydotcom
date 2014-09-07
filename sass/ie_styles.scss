@@ -4,14 +4,18 @@ div
 	border:1px solid red;
 	}
 
-.hero-art
+.no-multiplebgs
 {
-overflow:hidden;
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-src='../siteart/cruxbg.jpg',
-sizingMethod='scale');
-
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-src='../siteart/cruxbg.jpg',
-sizingMethod='scale')";
+	.hero-art
+	{
+	width:1300px;
+	margin:0 auto;
+	position:relative;
+	background-image:url('../siteart/cruxbg_ie.jpg');
+	overflow:hidden;
+	background-size:100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../siteart/cruxbg_ie.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../siteart/cruxbg_ie.jpg', sizingMethod='scale')";
+	}
 }
+

@@ -4,11 +4,20 @@
 	max-width:1300px;
 	padding:0 0 30%;
 	margin:0;
-	background-image:url('../siteart/dots.svg'), url('../siteart/cruxbg.jpg'), ;
+	background-image:url('../siteart/dots.svg'), url('../siteart/cruxbg.jpg') ;
 	background-attachment:fixed;
 	background-size:auto auto, 100% auto;
 	position:relative;
+	min-height:300px;
+	
+		@media screen and (max-width:em(500)) 
+		{
+		background-size:auto auto, auto 300px;
+		background-position:auto auto, center top;	
+		}
+	
 	}
+	
 	
 	.hero-art-shadow
 	{

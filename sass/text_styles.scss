@@ -73,21 +73,7 @@ p
 
 h1
 	{
-	font-family:'surveyor';
-	font-style:italic;
-	text-transform:uppercase;
-	font-size:em(50);
-	letter-spacing:.02em;
-	text-align:right;
-	margin:0px;
-	padding:0px;
-	line-height:80%;
-	font-weight:normal;
-	background-color:rgba(white, .7);
-	display:inline-block;
-	float:right;
-	padding:6px 20px 0;
-	color:teal;
+	
 	}
 	
 h3
@@ -104,38 +90,7 @@ a
 		
 	}
 	
-.navigation-menu
-	{
-	margin:0px;
-	padding:0px;
-	float:right;
-	
-		li
-		{
-		display:inline-block;
-		font-size:em(50);
-		font-family:'surveyor';
-		font-style:italic;
-		text-transform:uppercase;
-		letter-spacing:.02em;
-		text-align:right;
-		display:inline-block;
-		margin:0px 0 0 -4px;
-		padding:0px;
-		line-height:100%;
-		color:#777;
-		background-color:rgba(white, .7);
-		padding:3px 12px;
-		}
-	}
 
-ul
-	{
-	list-style-type:none;
-	margin:0px;
-	padding:0px;
-	
-	}
 	
 	
 .icon
@@ -159,6 +114,17 @@ ul
 		color:#666;	
 		}
 	
+	}
+	
+.page-subhead
+	{
+	font-size:em(24);
+	font-style: italic;
+	font-family:'surveyor';
+	font-weight:normal;
+	text-align:center;
+	color:$body;
+	margin:0 0 50px 0;
 	}
 	
 .button

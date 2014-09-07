@@ -209,6 +209,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 			margin-right:0px;
 			}
 		
+
+			@media screen and (max-width:em(900)) 
+			{
+			padding:0 25px;
+			}
+			
+			@media screen and (max-width:em(825)) 
+			{
+			padding:0 15px;
+			}
+		
+			@media screen and (max-width:em(600)) 
+			{
+			@include spanner_too (3, 1200, 0, 3);
+			max-width:em(400);
+			}
+		
 		}
 
 	}
@@ -238,6 +255,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	font-family:'surveyor';
 	font-style:italic;	
 	margin:0 0 15px;
+		
+		@media screen and (max-width:em(825)) 
+		{
+		font-size:em(20);
+		}
+	
 	}
 	
 .triple-module-text
@@ -245,8 +268,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	font-size:em(16);
 	color:#888;
 	line-height:160%;
-	}
 	
+		@media screen and (max-width:em(825)) 
+		{
+		font-size:em(14);
+		}
+	
+	}
+
 	
 .hero-art-secondary
 	{

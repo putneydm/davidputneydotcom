@@ -109,6 +109,11 @@ a
 	color:$aqua;
 	letter-spacing: 0.02em;
 	
+				@media screen and (max-width:em(500)) 
+				{
+				font-size:em(30);
+				}
+	
 		span
 		{
 		color:#666;	
@@ -125,6 +130,12 @@ a
 	text-align:center;
 	color:$body;
 	margin:0 0 50px 0;
+	
+		@media screen and (max-width:em(500)) 
+		{
+		font-size:em(20);
+		}
+
 	}
 	
 .button

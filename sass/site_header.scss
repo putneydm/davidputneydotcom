@@ -290,3 +290,29 @@ box-shadow:0 0 8px rgba(#999, .8);
 		}
 	}
 	
+.inside-header
+	{
+	position:fixed;
+	width:100%;
+	height:50px;
+	background-color:$haze;
+	z-index:100;
+	top:0px;
+	transition: height .15s ease-in-out;
+	box-shadow:0 0 8px rgba($dark, .8);
+	border-bottom:1px solid white;
+
+	
+		@media screen and (max-width:em(750)) 
+		{
+		height:40px;
+		}
+	
+		@media screen and (max-width:em(600)) 
+		{
+		height:40px;
+		overflow:hidden;
+		}
+	
+	}	
+	

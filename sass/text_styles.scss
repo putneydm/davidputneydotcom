@@ -174,3 +174,36 @@ a
 		}
 	
 	}
+	
+	
+.portfolio-project-name	
+	{
+	bottom:0%;
+	width:100%;
+	text-align:center;
+	font-family:$sans;
+	font-size:em(60);
+	color:$body;
+	margin:0 0 20px;
+	transition:font-size .3s;
+	
+	@media screen and (max-width:em(800)) 
+	{
+	font-size:em(48);
+	}
+	
+	@media screen and (max-width:em(600))
+	{
+	font-size:em(36);
+	}
+	
+	@media screen and (max-width:em(475)) 
+	{
+	font-size:em(24);
+	}
+	
+	}
+	
+	
+
+	

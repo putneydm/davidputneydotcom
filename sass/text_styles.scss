@@ -113,6 +113,7 @@ a
 	text-align:center;
 	color:$aqua;
 	letter-spacing: 0.02em;
+	transform:font-size .3s;
 	
 				@media screen and (max-width:em(500)) 
 				{
@@ -135,6 +136,7 @@ a
 	text-align:center;
 	color:$body;
 	margin:0 0 50px 0;
+	transform:font-size .3s;
 	
 		@media screen and (max-width:em(500)) 
 		{

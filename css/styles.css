@@ -86,6 +86,10 @@ a {
   text-decoration: none;
   transition: background-color .2; }
 
+.hidden {
+  position: absolute;
+  left: -90000px; }
+
 .icon {
   font-family: "icon", sans-serif; }
 
@@ -134,7 +138,8 @@ a {
   margin: 0 auto 40px;
   letter-spacing: .04em; }
   .button:hover {
-    background-color: #245360; }
+    background-color: #245360;
+    color: white; }
   .button .icon {
     display: inline-block;
     margin: 0 0 0 8px; }
@@ -147,7 +152,8 @@ a {
   font-size: 3.75em;
   color: #444;
   margin: 0 0 20px;
-  transition: font-size .3s; }
+  transition: font-size .3s;
+  font-weight: 700; }
   @media screen and (max-width: 50em) {
     .portfolio-project-name {
       font-size: 3em; } }
@@ -486,6 +492,12 @@ ul {
   font-weight: 800;
   margin: 0 0 0px 0;
   padding: 0 0 2px 0; }
+  .teaser-module-head a {
+    color: #444;
+    background-image: none; }
+    .teaser-module-head a:hover {
+      color: #4094aa;
+      background-image: none; }
 
 .teaser-module-abstract {
   width: 33.33333%;
@@ -534,7 +546,8 @@ ul {
   display: block;
   float: left;
   overflow: hidden;
-  padding: 5px 0px 0 5px; }
+  padding: 5px 0px 0 5px;
+  position: relative; }
   @media screen and (max-width: 48.125em) {
     .teaser-module-mainart {
       width: 100%;
@@ -542,6 +555,8 @@ ul {
       box-sizing: border-box; } }
   .teaser-module-mainart img {
     width: 100%; }
+  .teaser-module-mainart .med-photo-overlay:hover {
+    box-shadow: 0 0 50px rgba(102, 102, 102, 0.7) inset; }
 
 .teaser-module-secondary {
   margin: 5px 0 40px 0;
@@ -552,6 +567,7 @@ ul {
   float: left;
   max-height: 178px;
   overflow: hidden;
+  position: relative;
   padding: 0 0 0 5px; }
   @media screen and (max-width: 48.125em) {
     .teaser-module-secondary {
@@ -562,6 +578,8 @@ ul {
     width: 100%; }
   .teaser-module-secondary:last-child {
     margin-right: 0px; }
+  .teaser-module-secondary .round-photo-overlay:hover {
+    box-shadow: 0 0 50px rgba(102, 102, 102, 0.7) inset; }
 
 .teaser-module-arrow {
   width: 6.25%;
@@ -580,6 +598,25 @@ ul {
   text-align: center; }
   .teaser-module-arrow:hover {
     color: #245360; }
+
+.med-photo-overlay {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 60%;
+  box-shadow: 0 0 50px rgba(153, 153, 153, 0.5) inset;
+  transition: box-shadow .2s; }
+
+.wide-photo-overlay {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 42%;
+  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset; }
+
+.round-photo-overlay {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100%;
+  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset; }
 
 .triple-module {
   width: 100.0%;
@@ -767,7 +804,8 @@ ul {
   border-top: 1px solid white; }
   @media screen and (max-width: 28.125em) {
     .portfolio-introduction {
-      padding: 20px 10px 10px; } }
+      padding: 20px 10px 10px;
+      background-size: 100% 1100px; } }
 
 .big-image-module {
   width: 100%;
@@ -818,7 +856,9 @@ ul {
   box-sizing: border-box;
   float: left;
   margin: 0px;
-  display: block; }
+  display: block;
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 43.75em) {
     .big-image-module-main {
       width: 100%;
@@ -842,7 +882,9 @@ ul {
   box-sizing: border-box;
   margin: 0px;
   display: block;
-  padding: 0px; }
+  padding: 0px;
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 43.75em) {
     .big-image-module-secondary {
       width: 50%;
@@ -857,7 +899,9 @@ ul {
   width: 32.12121%;
   margin-right: 1.81818%;
   box-sizing: border-box;
-  float: left; }
+  float: left;
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 40.625em) {
     .big-image-module-three-across {
       width: 100%;
@@ -872,7 +916,9 @@ ul {
 .big-text-module-image {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
 
 .triple-module-portfolio {
   width: 100.0%;
@@ -915,7 +961,8 @@ ul {
   border-radius: 50%;
   margin: 0 auto 20px;
   display: block;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   @media screen and (max-width: 50em) {
     .triple-module-image-portfolio {
       width: 150px;
@@ -956,7 +1003,9 @@ ul {
   width: 52.5%;
   margin-right: 0.90909%;
   box-sizing: border-box;
-  margin: 3px 0 0 0.90909%; }
+  margin: 3px 0 0 0.90909%;
+  position: relative;
+  overflow: hidden; }
 
 .sidesaddle-module-textblock {
   color: #666;
@@ -1121,3 +1170,7 @@ ul {
     .resume-subheader {
       font-size: 0.875em;
       line-height: 150%; } }
+
+.resume-links {
+  text-align: center;
+  font-family: "Open Sans", sans-serif; }

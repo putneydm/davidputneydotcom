@@ -194,20 +194,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	float:left;
 	overflow:hidden;
 	padding:5px 0px 0 5px;
+	position:relative;
 	
 		@media screen and (max-width:em(770)) 
 		{
 		@include spanner_too (8, 678, 0, 8);
 		}
 	
-		
 		img
 		{
 		width:100%;
 		}
-	}
-	
+		
+		.med-photo-overlay
+		{	
+		&:hover
+		{
+		box-shadow:0 0 50px rgba($dark, .7) inset;	
+		}
+		}
 
+	}
 	
 .teaser-module-secondary
 	{
@@ -217,6 +224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	float:left;
 	max-height:178px;
 	overflow:hidden;
+	position:relative;
 	padding:0 0 0 5px;
 	
 		@media screen and (max-width:em(770)) 
@@ -234,6 +242,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		{
 		margin-right:0px;
 		}
+		
+		.round-photo-overlay
+		{	
+		&:hover
+		{
+		box-shadow:0 0 50px rgba($dark, .7) inset;	
+		}
+		}
+		
 
 	}	
 	
@@ -258,6 +275,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	}
 	
 	}		
+
+
+.med-photo-overlay
+	{
+	position:absolute;
+	width:100%;
+	padding-bottom:60%;
+	box-shadow:0 0 50px rgba($med, .5) inset;
+	transition: box-shadow .2s;
+	}
+
+	
+.wide-photo-overlay
+	{
+	position:absolute;
+	width:100%;
+	padding-bottom:42%;
+	box-shadow:0 0 50px rgba($med, .3) inset;
+	}	
+	
+.round-photo-overlay
+	{
+	position:absolute;
+	width:100%;
+	padding-bottom:100%;
+	box-shadow:0 0 50px rgba($med, .3) inset;
+	}		
+
 
 	
 .triple-module

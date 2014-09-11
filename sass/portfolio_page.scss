@@ -358,3 +358,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		}
 	
 	}	
+	
+	
+.sidesaddle-module
+	{
+	@include spanner_too (12, 1100, 0, 12);
+	}
+	
+.sidesaddle-module-image
+	{
+	float:right;
+	@include spanner_too (12, 1100, 10, 7);	
+	margin:3px 0 0 0.90909%;
+
+	}
+	
+.sidesaddle-module-textblock
+	{
+	color:$dark;
+	font-size:em(16);
+	line-height:150%; 	
+	font-family:$droid;
+	}

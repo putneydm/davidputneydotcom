@@ -131,6 +131,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	font-weight:800;
 	margin:0 0 0px 0;
 	padding:0 0 2px 0;
+	
+		a
+		{
+		color:$body;
+		background-image:none;
+		
+			&:hover
+			{
+			color:$aqua;
+			background-image:none;			
+			}
+		}	
 	}
 
 .teaser-module-abstract

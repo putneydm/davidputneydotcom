@@ -140,7 +140,6 @@ ul
 	background-color:$haze;
 	top:-50px;
 	z-index:100;
-	transition: top .15s ease-in-out, height .15s ease-in-out;
 	
 		@media screen and (max-width:em(750)) 
 		{
@@ -151,6 +150,7 @@ ul
 		{
 		height:40px;
 		overflow:hidden;
+		transition: top .15s ease-in-out, height .15s ease-in-out;
 		}
 	
 	}

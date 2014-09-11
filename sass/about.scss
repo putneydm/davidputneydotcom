@@ -1,0 +1,190 @@
+.hero-art-resume
+	{
+	width:100%;
+	max-width:1300px;
+	padding:0 0 40%;
+	margin:0;
+	background-image:url('../siteart/white_fade.svg'), url('../siteart/cruxbg_inside.png');
+	background-attachment:fixed, fixed;
+	background-size:auto auto, 100% auto;
+	background-position:0 0, center 60px;
+	background-repeat:repeat, no-repeat;
+	position:relative;
+	overflow:hidden;
+	min-height:300px;
+	
+		@media screen and (max-width:em(500)) 
+		{
+		background-size:500px auto;
+		background-position:center 50px;	
+		}	
+	}
+
+
+
+/*
+.resume_container
+	{
+	@extend .teaser-module-container;
+	padding-top:20px;
+	
+		p
+		{
+		font-size:em(15);
+		line-height:150%;
+		
+				@media screen and (max-width:em(500)) 
+				{
+				font-size:em(14);
+				line-height:150%;
+				}
+		
+		}
+	
+	}
+
+
+.resume-header
+	{
+	font-family:$sans;
+	font-size:em(18);
+	font-weight:700;
+	border-bottom:1px solid $light;
+	}
+	
+.resume-section-header
+	{
+	font-family:$sans;
+	font-size:em(15);
+	font-weight:700;
+	margin:0 0 0px 0;
+	
+		@media screen and (max-width:em(500)) 
+		{
+		font-size:em(14);
+		line-height:150%;
+		}
+	
+	
+		&:before
+		{
+		content:'';
+		display:inline-block;
+		background-color:$med;
+		width:12px;
+		height:12px;
+		margin:0 8px 0 0;
+		}
+	}
+	
+	
+.resume-subheader
+	{
+	font-family:$sans;
+	font-size:em(15);
+	font-weight:700;
+	margin:0 0 0px 0;
+	
+		@media screen and (max-width:em(500)) 
+		{
+		font-size:em(14);
+		line-height:150%;
+		}
+	
+	}
+	
+.resume-info-line
+	{
+	font-style:italic;
+	}
+	
+.resume-details	
+	{
+	padding:0 40px 0;	
+	
+		@media screen and (max-width:em(600)) 
+		{
+		padding:0 20px 0;	
+		}
+		
+		@media screen and (max-width:em(450)) 
+		{
+		padding:0 10px 0;	
+		}
+		
+	
+	}
+
+	*/
+	
+.resume_container
+	{
+	@extend .teaser-module-container;
+	padding-top:20px;
+	width:100%;
+	max-width:950px;
+	margin:0 auto;
+	
+		p
+		{
+		font-size:em(15);
+		line-height:150%;
+		
+				@media screen and (max-width:em(500)) 
+				{
+				font-size:em(14);
+				line-height:150%;
+				}
+		
+		}
+	
+	}	
+	
+.resume-section
+	{
+	margin:0 0 60px 0;
+	display:block;
+	float:none;
+	}
+	
+.resume-section-header
+	{
+	@extend .section-header;
+	font-size:em(30);	
+	}
+	
+	
+.resume-info-line
+	{
+	font-style:italic;
+	text-align:center;
+	margin:0 0 20px 0;
+	}	
+	
+	
+.resume-subheader
+	{
+	font-family:$sans;
+	font-size:em(15);
+	font-weight:700;
+	margin:30px 0 15px 0;
+	padding:0px 0 10px 0;
+	text-align:center;
+	background-image: -moz-linear-gradient(top, transparent 75%, $dark 75%);
+	background-image: -webkit-linear-gradient(top, transparent 75%, $dark 75%);
+	background-image: -o-linear-gradient(top, transparent 75%, $dark 75%);
+	background-image: linear-gradient(to bottom, transparent 75%, $dark 75%);
+	background-size: 90px 2px;
+	background-origin: padding-box;
+	background-position: center 100%;
+	background-repeat: no-repeat;	
+	
+	
+	
+		@media screen and (max-width:em(500)) 
+		{
+		font-size:em(14);
+		line-height:150%;
+		}
+	
+	}

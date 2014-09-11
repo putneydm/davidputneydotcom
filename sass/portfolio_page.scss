@@ -180,6 +180,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	float:left;
 	margin:0px;
 	display:block;
+	position:relative;
+	overflow:hidden;
 
 	
 	@media screen and (max-width:em(700)) 
@@ -207,7 +209,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	margin:0px;
 	display:block;
 	padding:0px;
-	
+	position:relative;
+	overflow: hidden;
+
 		@media screen and (max-width:em(700)) 
 		{
 		@include spanner_too (5, 425, 0, 2.5);
@@ -226,6 +230,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	margin:0px 0 10px 0;
 	@include spanner_too (3, 1100, 20, 1);
 	float:left;
+	position:relative;
+	overflow:hidden;
 	
 		@media screen and (max-width:em(650)) 
 		{
@@ -250,6 +256,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	width:100%;
 	max-width:900px;
 	margin:0 auto;	
+	position:relative;
+	overflow:hidden;
 	}
 	
 	
@@ -313,6 +321,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	margin:0 auto 20px;
 	display:block;	
 	overflow:hidden;
+	position:relative;
 	
 		@media screen and (max-width:em(800)) 
 		{
@@ -375,6 +384,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	float:right;
 	@include spanner_too (12, 1100, 10, 7);	
 	margin:3px 0 0 0.90909%;
+	position:relative;
+	overflow:hidden;
 
 	}
 	

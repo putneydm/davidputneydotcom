@@ -88,6 +88,18 @@ p
 	line-height:150%;
 	}
 
+a
+	{
+	@include hoverer ($aqua);
+	
+		&:hover
+		{
+		@include hoverer ($dark_aqua);
+		}
+	
+	}
+
+
 h1
 	{
 	

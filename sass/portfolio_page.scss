@@ -97,6 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	width:100%;
 	margin:-70px auto 0;
 	padding:0 40px;
+
 	
 		@media screen and (max-width:em(650)) 
 		{
@@ -123,9 +124,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	border-right:1px solid $light;
 	border-top:1px solid white;
 	
+
+	
+	
 		@media screen and (max-width:em(450)) 
 		{
 		padding:20px 10px 10px;
+		background-size:100% 1100px;
 		}
 	
 	}

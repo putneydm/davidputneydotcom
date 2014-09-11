@@ -150,7 +150,7 @@
 .resume-section-header
 	{
 	@extend .section-header;
-	font-size:em(30);	
+	font-size:em(30);
 	}
 	
 	
@@ -186,5 +186,13 @@
 		font-size:em(14);
 		line-height:150%;
 		}
+	
+	}
+
+.resume-links
+	{
+	text-align:center;
+	font-family:$sans;
+	
 	
 	}

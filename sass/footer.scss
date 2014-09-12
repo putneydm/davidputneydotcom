@@ -53,6 +53,29 @@ footer
 	{
 	font-size:em(16);
 	}
+
+	}
 	
+.scroll-to-top
+	{
+	position:fixed;
+	right:15px;
+	bottom:30px;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color:$aqua;
+	display:block;
+	text-align:center;
+	line-height:40px;
+	color:white;
+	display:none;
+	background-image:none;
+	
+		&:hover
+		{
+		color:white;
+		background-image:none;
+		}	
 
 	}

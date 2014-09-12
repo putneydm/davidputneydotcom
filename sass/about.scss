@@ -151,6 +151,13 @@
 	{
 	@extend .section-header;
 	font-size:em(30);
+	transition:font-size .3s;
+	
+	@media screen and (max-width:em(500)) 
+	{
+	font-size:em(22);
+	}
+	
 	}
 	
 	

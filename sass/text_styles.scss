@@ -91,6 +91,7 @@ p
 a
 	{
 	@include hoverer ($aqua);
+	transition:color .2s, background .2s;
 	
 		&:hover
 		{

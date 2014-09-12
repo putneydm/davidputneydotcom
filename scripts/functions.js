@@ -51,13 +51,8 @@ $('#menu-button' ).bind( "tap", function( e ){
 
 
 $(window) .resize (function ()
-	{
-	var window_width = $(window) .width ();
-	var menu_height = $('#secondary-header') .height ();
-	
-	console.log(menu_height);
-	
-	$('#secondary-header') .removeClass ('menu-active');
+	{		
+	$('#secondary-header, #inside-header') .removeClass ('menu-active');
 	$('.button_hidden') .hide ();
 	$('.button_visible') .show ();
 

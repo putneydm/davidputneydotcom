@@ -81,12 +81,24 @@ $(window) .scroll (function ()
 		$('.button_visible') .show ();
 		}		
 		}		  
-    
-	
+
+	function scroll_up (document_top)
+		{	
+		if (document_top > 300 && window_width < 900)
+		{
+		$('#scroll-to-top') .fadeIn (200);		
+		}
+		
+		if (document_top < 300)
+		{
+		$('#scroll-to-top') .fadeOut (200);		
+		}						
+	}    
+
    $.data(this, 'scrollTimer', setTimeout(function() {    
-		sticky_menu(main_position.top, scroll_position);		
+		sticky_menu(main_position.top, scroll_position);
+		var document_top = $(document) .scrollTop ();
+		scroll_up(document_top);	
  }, 50));
 
 	}); 
-
-

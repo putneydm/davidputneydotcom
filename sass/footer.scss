@@ -1,0 +1,54 @@
+footer
+	{
+	height:200px;
+	width:100%;
+	background-color:#f6f5f1;
+	}
+	
+	
+.footer-links
+	{
+	width:100%;
+	text-align:center;
+	
+	a
+	{
+	background:none;
+	
+	li
+	{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	margin:40px 12px 0;
+	border-radius:50%;
+	font-family:$icon;
+	background-color:white;
+	line-height:50px;
+	font-size:em(18);
+	color:$aqua;
+	transition:color .2s, background-color .2s;
+	
+		@media screen and (max-width:em(350)) 
+		{
+		margin:40px 5px 0;		
+		}
+	
+		&:hover
+		{
+		background-color:$aqua;
+		color:white;
+		}
+
+	
+	}
+	}
+	
+	
+	.mail-link
+	{
+	font-size:em(16);
+	}
+	
+
+	}

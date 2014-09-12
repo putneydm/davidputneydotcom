@@ -254,7 +254,7 @@ ul {
   margin: 0px;
   padding: 0px; }
 
-.secondary-header {
+.secondary-header, .inside-header {
   position: fixed;
   width: 100%;
   height: 50px;
@@ -262,10 +262,10 @@ ul {
   top: -50px;
   z-index: 100; }
   @media screen and (max-width: 46.875em) {
-    .secondary-header {
+    .secondary-header, .inside-header {
       height: 40px; } }
   @media screen and (max-width: 37.5em) {
-    .secondary-header {
+    .secondary-header, .inside-header {
       height: 40px;
       overflow: hidden;
       transition: top .15s ease-in-out, height .15s ease-in-out; } }
@@ -374,21 +374,13 @@ ul {
       display: block; } }
 
 .inside-header {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background-color: #F6F5F1;
-  z-index: 100;
   top: 0px;
-  transition: height .15s ease-in-out;
-  box-shadow: 0 0 8px rgba(102, 102, 102, 0.8);
-  border-bottom: 1px solid white; }
+  box-shadow: 0 0 8px rgba(153, 153, 153, 0.8); }
   @media screen and (max-width: 46.875em) {
     .inside-header {
-      height: 40px; } }
+      transition: height .15s ease-in-out; } }
   @media screen and (max-width: 37.5em) {
     .inside-header {
-      height: 40px;
       overflow: hidden; } }
 
 footer {
@@ -422,6 +414,24 @@ footer {
         margin: 40px 5px 0; } }
   .footer-links .mail-link {
     font-size: 1em; }
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4094aa;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  display: none;
+  background-image: none; }
+  .scroll-to-top:hover {
+    color: white;
+    background-image: none; }
 
 .hero-art {
   width: 100%;

@@ -190,11 +190,14 @@ a
 	border-radius:2px;
 	margin:0 auto 40px;
 	letter-spacing:.04em;
+	transition:color .2s, background-color .2s;
+	background-image:none;
 	
 		&:hover
 		{
 		background-color:$dark_aqua;
 		color:white;
+		background-image:none;
 		}
 		
 		.icon

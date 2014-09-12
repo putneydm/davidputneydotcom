@@ -35,14 +35,7 @@
 
 	a
 	{
-	color:$aqua;
-		
-		&:hover
-		{
-		color:$dark_aqua;
-		}
-	
-	
+	background-image:none;
 	}
 	
 	
@@ -72,7 +65,13 @@
 		line-height:100%;
 		color:#777;
 		background-color:rgba($haze, .7);
-		padding:3px 12px 3px 0;
+		padding:3px 12px 5px 0;
+			
+			a
+			{
+			background-image:none;
+			}
+		
 		
 			&:after
 			{
@@ -94,7 +93,7 @@
 			
 			&:nth-child(1)
 			{
-			padding:3px 12px 3px;
+			padding:3px 12px 5px;
 			}
 
 			@media screen and (max-width:em(600)) 
@@ -195,6 +194,20 @@ box-shadow:0 0 8px rgba(#999, .8);
 		line-height:100%;
 		color:#777;
 		padding:3px 8px;
+		
+			a
+			{
+			color:$med;
+			background:none;
+			
+				&:hover
+				{
+				color:$aqua;
+				background:none;
+				}
+			
+			
+			}
 			
 			&:after
 			{
@@ -244,6 +257,12 @@ box-shadow:0 0 8px rgba(#999, .8);
 	margin:10px 0 0 8px;
 	font-style:italic;
 	text-transform:uppercase;
+	
+		a
+		{
+		background-image:none;
+		
+		}
 	
 	@media screen and (max-width:em(750)) 
 	{

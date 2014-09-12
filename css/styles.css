@@ -121,7 +121,9 @@ a {
   transform: font-size .3s; }
   @media screen and (max-width: 31.25em) {
     .page-subhead {
-      font-size: 1.25em; } }
+      font-size: 1.25em;
+      line-height: 120%;
+      margin: 0 0 20px 0; } }
 
 .button {
   display: block;
@@ -163,8 +165,9 @@ a {
       font-size: 3em; } }
   @media screen and (max-width: 37.5em) {
     .portfolio-project-name {
-      font-size: 2.25em; } }
-  @media screen and (max-width: 29.6875em) {
+      font-size: 2.25em;
+      margin: 0 0 10px; } }
+  @media screen and (max-width: 31.25em) {
     .portfolio-project-name {
       font-size: 1.5em; } }
 
@@ -396,26 +399,27 @@ footer {
 .footer-links {
   width: 100%;
   text-align: center; }
-  .footer-links a {
-    background: none; }
-    .footer-links a li {
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-      margin: 40px 12px 0;
+  .footer-links li {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 40px 12px 0; }
+    .footer-links li a {
+      display: block;
       border-radius: 50%;
       font-family: "icon", sans-serif;
       background-color: white;
       line-height: 50px;
       font-size: 1.125em;
       color: #4094aa;
-      transition: color .2s, background-color .2s; }
-      @media screen and (max-width: 21.875em) {
-        .footer-links a li {
-          margin: 40px 5px 0; } }
-      .footer-links a li:hover {
+      transition: color .2s, background-color .2s;
+      background-image: none; }
+      .footer-links li a:hover {
         background-color: #4094aa;
         color: white; }
+    @media screen and (max-width: 21.875em) {
+      .footer-links li {
+        margin: 40px 5px 0; } }
   .footer-links .mail-link {
     font-size: 1em; }
 
@@ -1182,7 +1186,11 @@ footer {
   float: none; }
 
 .resume-section-header {
-  font-size: 1.875em; }
+  font-size: 1.875em;
+  transition: font-size .3s; }
+  @media screen and (max-width: 31.25em) {
+    .resume-section-header {
+      font-size: 1.375em; } }
 
 .resume-info-line {
   font-style: italic;

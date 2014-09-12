@@ -11,9 +11,6 @@ footer
 	width:100%;
 	text-align:center;
 	
-	a
-	{
-	background:none;
 	
 	li
 	{
@@ -21,28 +18,35 @@ footer
 	height:50px;
 	display:inline-block;
 	margin:40px 12px 0;
-	border-radius:50%;
-	font-family:$icon;
-	background-color:white;
-	line-height:50px;
-	font-size:em(18);
-	color:$aqua;
-	transition:color .2s, background-color .2s;
 	
-		@media screen and (max-width:em(350)) 
+		a
 		{
-		margin:40px 5px 0;		
-		}
-	
+		display:block;
+		border-radius:50%;
+		font-family:$icon;
+		background-color:white;
+		line-height:50px;
+		font-size:em(18);
+		color:$aqua;
+		transition:color .2s, background-color .2s;	
+		background-image:none;
+		
 		&:hover
 		{
 		background-color:$aqua;
 		color:white;
 		}
-
+		
+		}
 	
+	
+		@media screen and (max-width:em(350)) 
+		{
+		margin:40px 5px 0;		
+		}
+
 	}
-	}
+
 	
 	
 	.mail-link

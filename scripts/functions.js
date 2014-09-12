@@ -1,13 +1,8 @@
 $(document) .ready (function ()
 	{
-
-//	$('#email-link') .append ('xxx');
-	
-	
 	$('#email-link').wrap('<a href="mailto:david@davidputney.com?Subject=Website%20feedback" target="_top">');  
 	$('#twitter-link').wrap('<a href="https://twitter.com/putneydm">');  
 	$('#facebook-link').wrap('<a href="	https://www.facebook.com/david.putney">'); 
-  console.log( "works" );
 
 $( "a" ).each( function(){
   var href = $( this ).attr( "href" );
@@ -16,27 +11,35 @@ $( "a" ).each( function(){
                     window.location.href = this.href;
                 });
             }
-} );
+        });
+            
+function page_scroller()
+	{
+	$('html, body').animate({ scrollTop: 0 }, 150);	
+	}
 
-
-
-
+	$("#scroll-to-top").click(function() {
+		page_scroller();
+		return false;
+	});	
+		            
 
 $('#menu-button' ).bind( "tap", function( e ){ 
  
-var menu_height = $('#secondary-header') .height ();
-	console.log(menu_height);
-
- if (menu_height == 40)
+  	var id = '#' + $('#menu-button').closest("navigation").attr("id");
+ 	var menu_height = $(id) .height ();
+ 	
+ if (menu_height === 40)
 	 {
-	 $('#secondary-header') .addClass ('menu-active');
+	 $(id) .addClass ('menu-active');
+	  	console.log(menu_height);
 	 $('.button_hidden') .show ();
 	 $('.button_visible') .hide ();
 	}
 	
  else
 	 {
-	 $('#secondary-header') .removeClass ('menu-active');
+	 $(id) .removeClass ('menu-active');
 	 $('.button_hidden') .hide ();
 	 $('.button_visible') .show ();
 	}	

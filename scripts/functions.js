@@ -1,6 +1,12 @@
 $(document) .ready (function ()
 	{
 
+//	$('#email-link') .append ('xxx');
+	
+	
+	$('#email-link').wrap('<a href="mailto:david@davidputney.com?Subject=Website%20feedback" target="_top">');  
+	$('#twitter-link').wrap('<a href="https://twitter.com/putneydm">');  
+	$('#facebook-link').wrap('<a href="	https://www.facebook.com/david.putney">'); 
   console.log( "works" );
 
 $( "a" ).each( function(){

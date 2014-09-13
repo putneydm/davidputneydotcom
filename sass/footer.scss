@@ -14,8 +14,8 @@ footer
 	
 	li
 	{
-	width:50px;
-	height:50px;
+	width:55px;
+	height:55px;
 	display:inline-block;
 	margin:40px 12px 0;
 	
@@ -25,11 +25,14 @@ footer
 		border-radius:50%;
 		font-family:$icon;
 		background-color:white;
-		line-height:50px;
+		line-height:55px;
+		width:55px;
+		height:55px;
 		font-size:em(18);
 		color:$aqua;
 		transition:color .2s, background-color .2s;	
 		background-image:none;
+		box-shadow:-1px -1px 1px rgba($med, .1);
 		
 		&:hover
 		{

@@ -396,3 +396,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	line-height:150%; 	
 	font-family:$droid;
 	}
+	
+.slideshow
+	{
+	padding-bottom:18.5%;
+	
+		@media screen and (max-width:em(650)) 
+		{
+		padding-bottom:58%;
+		}
+	
+	}
+	
+.slide-one
+	{
+	position:absolute;
+	z-index:-2;
+	}
+	
+.slide-two
+	{
+	position:absolute;
+	z-index:-1;
+	}	

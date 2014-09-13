@@ -312,6 +312,8 @@ ul {
       display: inline-block;
       padding: 0 0 0 8px;
       color: #d0d0d0; }
+    .secondary-navigation-menu li:nth-child(4):after {
+      content: ''; }
     @media screen and (max-width: 46.875em) {
       .secondary-navigation-menu li {
         font-size: 1.125em; } }
@@ -392,8 +394,8 @@ footer {
   width: 100%;
   text-align: center; }
   .footer-links li {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: inline-block;
     margin: 40px 12px 0; }
     .footer-links li a {
@@ -401,11 +403,14 @@ footer {
       border-radius: 50%;
       font-family: "icon", sans-serif;
       background-color: white;
-      line-height: 50px;
+      line-height: 55px;
+      width: 55px;
+      height: 55px;
       font-size: 1.125em;
       color: #4094aa;
       transition: color .2s, background-color .2s;
-      background-image: none; }
+      background-image: none;
+      box-shadow: -1px -1px 1px rgba(153, 153, 153, 0.1); }
       .footer-links li a:hover {
         background-color: #4094aa;
         color: white; }
@@ -656,19 +661,22 @@ footer {
   width: 100%;
   padding-bottom: 60%;
   box-shadow: 0 0 50px rgba(153, 153, 153, 0.5) inset;
-  transition: box-shadow .2s; }
+  transition: box-shadow .2s;
+  z-index: 2; }
 
 .wide-photo-overlay {
   position: absolute;
   width: 100%;
   padding-bottom: 42%;
-  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset; }
+  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset;
+  z-index: 2; }
 
 .round-photo-overlay {
   position: absolute;
   width: 100%;
   padding-bottom: 100%;
-  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset; }
+  box-shadow: 0 0 50px rgba(153, 153, 153, 0.3) inset;
+  z-index: 2; }
 
 .triple-module {
   width: 100.0%;
@@ -1064,6 +1072,20 @@ footer {
   font-size: 1em;
   line-height: 150%;
   font-family: "Droid Serif", georgia, serif; }
+
+.slideshow {
+  padding-bottom: 18.5%; }
+  @media screen and (max-width: 40.625em) {
+    .slideshow {
+      padding-bottom: 58%; } }
+
+.slide-one {
+  position: absolute;
+  z-index: -2; }
+
+.slide-two {
+  position: absolute;
+  z-index: -1; }
 
 .hero-art-resume {
   width: 100%;

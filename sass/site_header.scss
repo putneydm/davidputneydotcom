@@ -205,8 +205,7 @@ box-shadow:0 0 8px rgba(#999, .8);
 				color:$aqua;
 				background:none;
 				}
-			
-			
+
 			}
 			
 			&:after
@@ -216,6 +215,16 @@ box-shadow:0 0 8px rgba(#999, .8);
 			padding:0 0 0 8px;
 			color:#d0d0d0;
 			}
+			
+			&:nth-child(4)
+			{			
+				&:after
+				{
+				content:'';
+				}
+							
+			}
+			
 		
 			@media screen and (max-width:em(750)) 
 			{

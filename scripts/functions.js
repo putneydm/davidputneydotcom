@@ -47,7 +47,35 @@ $('#menu-button' ).bind( "tap", function( e ){
 }); 
 
 
+
+function slideshow(target)
+	{
+	
+$(target + " > div:gt(0)").hide();	
+	
+setInterval(function() { 
+  $(target + ' > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo(target);
+},  3000);
+
+}
+
+function find_slides()
+	{
+	$( ".slide-container" ).each(function() {
+	var container = '#' + $( this ).attr('id');
+	slideshow(container);
+	});
+	}
+
+find_slides();
+
 }); 
+
 
 
 $(window) .resize (function ()

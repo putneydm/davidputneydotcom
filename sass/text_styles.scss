@@ -56,15 +56,28 @@ figure
 	img
 	{
 	width:100%;
+	}	
 	}
-	
-	}
-
 
 img
 	{
 	display:block;
+		
+		a
+		{
+		border:0px;
+		}	
 	}
+	
+a
+{
+	img
+	{
+	border:0px;
+	}
+
+
+}
 
 .clearfix
 	{

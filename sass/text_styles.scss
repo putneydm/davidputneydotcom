@@ -112,19 +112,6 @@ a
 		}
 	
 	}
-
-
-h1
-	{
-	
-	}
-	
-h3
-	{
-	font-family:$sans;
-	font-size:em(16);
-	font-weight:800;
-	}
 	
 a
 	{
@@ -197,14 +184,14 @@ a
 	background-color:$aqua;
 	color:white;
 	font-family:$sans;
-	font-weight:400;
+	font-weight:700;
 	font-size:em(12);
 	padding:20px 0;
 	height:55px;
 	text-align:center;
 	border-radius:2px;
 	margin:0 auto 40px;
-	letter-spacing:.04em;
+	letter-spacing:.06em;
 	transition:color .2s, background-color .2s;
 	background-image:none;
 	

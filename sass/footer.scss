@@ -25,19 +25,31 @@ footer
 		border-radius:50%;
 		font-family:$icon;
 		background-color:white;
-		line-height:55px;
+		padding-top:18px;
 		width:55px;
 		height:55px;
 		font-size:em(18);
 		color:$aqua;
-		transition:color .2s, background-color .2s;	
+		transition:background-color .2s ease-in-out;	
 		background-image:none;
 		box-shadow:-1px -1px 1px rgba($med, .1);
+		
+		#mail, #twitter, #facebook, #github
+		{
+		transition: fill .2s;	
+		}
+		
 		
 		&:hover
 		{
 		background-color:$aqua;
 		color:white;
+		
+		#mail, #twitter, #facebook, #github
+		{
+		fill:white;		
+		}
+		
 		}
 		
 		}

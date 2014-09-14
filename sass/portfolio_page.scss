@@ -4,7 +4,7 @@
 	max-width:1300px;
 	padding:0 0 40%;
 	margin:0;
-	background-image:url('../siteart/cruxbg_inside.png');
+	background-image:url('../siteart/cruxbg_inside_large.jpg');
 	background-attachment:fixed;
 	background-size:100% auto;
 	background-position:center 60px;
@@ -13,11 +13,20 @@
 	overflow:hidden;
 	min-height:300px;
 	
+	
+		@media screen and (max-width:em(700)) 
+		{
+		background-image:url('../siteart/cruxbg_inside_med.jpg');
+		}
+
 		@media screen and (max-width:em(500)) 
 		{
 		background-size:500px auto;
-		background-position:center 50px;	
+		background-position:center 50px;
+		background-image:url('../siteart/cruxbg_inside_small.jpg');
 		}	
+		
+		
 	}
 	
 	

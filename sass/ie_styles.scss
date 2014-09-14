@@ -16,12 +16,77 @@
 .no-svg
 	{
 	
-	div
-	{
+		.svg-container
+		{
+		display:none;
+		}
 	
-	border:1px solid blue;
+		.svg-fallback
+		{
+		display:block;
+		width:78px;
+		height:58px;
+		margin:0 auto;
+		background-repeat:no-repeat;
+		background-position:center center;
+		}
+		
+		.rocket
+		{
+		background-image:url('../siteart/rocket.png');	
+		}
+
+		.wrench
+		{
+		background-image:url('../siteart/wrench.png');	
+		}
+		
+		.code
+		{
+		background-image:url('../siteart/code.png');	
+		}
+		
+		.footer-links	
+			{
+			
+			li
+			{
+			background-repeat:no-repeat;
+			background-position:center center;
+
+			a
+			{
+
+			
+			}
+
+
+			}
+			
+			.twitter-link
+			{
+			background-image:url('../siteart/twitter.png');		
+			}
+			
+			.mail-link
+			{
+			background-image:url('../siteart/mail.png');		
+			}	
+			
+			.facebook-link
+			{
+			background-image:url('../siteart/mail.png');
+			border:1px solid red;
+			}
+			
+			.github-link
+			{
+			background-image:url('../siteart/github.png');	
+			border:1px solid red;
+			}			
+			
+			}
+		
+	
 	}
 	
-	
-	
-	}

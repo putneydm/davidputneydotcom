@@ -227,6 +227,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 		float:left;
 		}
 	
+	
+		@media screen and (max-width:em(600)) 
+		{
+		@include spanner_too (5, 425, 0, 5);
+		}	
+	
 		img
 		{
 		margin:0px;

@@ -11,7 +11,16 @@
 		<div class="teaser-module-art">
 		<figure class="teaser-module-mainart">
 			<div class="med-photo-overlay"></div>
-			<img src="siteart/medium.svg" alt="">
+
+			<picture>
+					<source srcset="siteart/xsmall.jpg" media="(min-width: 770px)">
+					<source srcset="siteart/medium.jpg" media="(min-width: 500px)">
+				  <source srcset="siteart/xsmall.jpg" media="(min-width: 500px)">
+				  <source srcset="siteart/medium.jpg" media="(min-width: 350px)">
+				  <source srcset="siteart/xsmall.jpg">
+				  <img srcset="medium.jpg" alt="">
+			</picture>	  
+
 		</figure>
 	
 		<figure class="teaser-module-secondary">

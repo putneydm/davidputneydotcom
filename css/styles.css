@@ -41,6 +41,11 @@ figure img {
 
 img {
   display: block; }
+  img a {
+    border: 0px; }
+
+a img {
+  border: 0px; }
 
 .clearfix:after {
   content: '';
@@ -77,11 +82,6 @@ a {
     background-origin: padding-box;
     background-position: 0 95%;
     background-repeat: repeat-x; }
-
-h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  font-weight: 800; }
 
 a {
   text-decoration: none;
@@ -131,15 +131,15 @@ a {
   max-width: 500px;
   background-color: #4094aa;
   color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 0.75em;
   padding: 20px 0;
   height: 55px;
   text-align: center;
   border-radius: 2px;
   margin: 0 auto 40px;
-  letter-spacing: .04em;
+  letter-spacing: .06em;
   transition: color .2s, background-color .2s;
   background-image: none; }
   .button:hover {
@@ -154,7 +154,7 @@ a {
   bottom: 0%;
   width: 100%;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 3.75em;
   color: #444;
   margin: 0 0 20px;
@@ -352,7 +352,7 @@ ul {
       margin: 8px 0 0 8px; } }
 
 .secondary-header-button {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   width: 60px;
   font-size: 0.5625em;
   text-transform: uppercase;
@@ -403,17 +403,21 @@ footer {
       border-radius: 50%;
       font-family: "icon", sans-serif;
       background-color: white;
-      line-height: 55px;
+      padding-top: 18px;
       width: 55px;
       height: 55px;
       font-size: 1.125em;
       color: #4094aa;
-      transition: color .2s, background-color .2s;
+      transition: background-color .2s ease-in-out;
       background-image: none;
       box-shadow: -1px -1px 1px rgba(153, 153, 153, 0.1); }
+      .footer-links li a #mail, .footer-links li a #twitter, .footer-links li a #facebook, .footer-links li a #github {
+        transition: fill .2s; }
       .footer-links li a:hover {
         background-color: #4094aa;
         color: white; }
+        .footer-links li a:hover #mail, .footer-links li a:hover #twitter, .footer-links li a:hover #facebook, .footer-links li a:hover #github {
+          fill: white; }
     @media screen and (max-width: 21.875em) {
       .footer-links li {
         margin: 40px 5px 0; } }
@@ -543,7 +547,7 @@ footer {
   margin: 0 0 40px 0; }
 
 .teaser-module-head {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 1em;
   border-bottom: 1px solid #d0d0d0;
   font-weight: 800;
@@ -723,11 +727,22 @@ footer {
   border-radius: 50%;
   margin: 0 auto 20px;
   display: block;
-  background-color: white; }
+  background-color: white;
+  padding-top: 45px; }
   @media screen and (max-width: 28.125em) {
     .triple-module-image {
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+      padding-top: 22px; } }
+  .triple-module-image svg {
+    margin: 0px auto;
+    display: block; }
+    @media screen and (max-width: 28.125em) {
+      .triple-module-image svg {
+        width: 60%; } }
+
+.svg-fallback {
+  display: none; }
 
 .triple-module-icon {
   font-size: 3.75em;
@@ -771,7 +786,7 @@ footer {
   max-width: 1300px;
   padding: 0 0 40%;
   margin: 0;
-  background-image: url("../siteart/cruxbg_inside.png");
+  background-image: url("../siteart/cruxbg_inside_large.jpg");
   background-attachment: fixed;
   background-size: 100% auto;
   background-position: center 60px;
@@ -779,10 +794,14 @@ footer {
   position: relative;
   overflow: hidden;
   min-height: 300px; }
+  @media screen and (max-width: 43.75em) {
+    .hero-art-portfolio {
+      background-image: url("../siteart/cruxbg_inside_med.jpg"); } }
   @media screen and (max-width: 31.25em) {
     .hero-art-portfolio {
       background-size: 500px auto;
-      background-position: center 50px; } }
+      background-position: center 50px;
+      background-image: url("../siteart/cruxbg_inside_small.jpg"); } }
 
 .hero-art-shadow-portfolio {
   position: absolute;
@@ -951,6 +970,11 @@ footer {
       margin-right: 0%;
       box-sizing: border-box;
       float: left; } }
+  @media screen and (max-width: 37.5em) {
+    .big-image-module-secondary {
+      width: 100%;
+      margin-right: 0%;
+      box-sizing: border-box; } }
   .big-image-module-secondary img {
     margin: 0px; }
 
@@ -1042,8 +1066,9 @@ footer {
 
 .triple-module-head-portfolio {
   font-size: 1em;
-  font-family: "Open Sans", sans-serif;
-  margin: 0 0 15px; }
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  margin: 0 0 15px;
+  font-weight: 700; }
 
 .triple-module-text {
   font-size: 1em;
@@ -1063,9 +1088,15 @@ footer {
   width: 52.5%;
   margin-right: 0.90909%;
   box-sizing: border-box;
-  margin: 3px 0 0 0.90909%;
+  margin: 5px 0 8px 0.90909%;
   position: relative;
   overflow: hidden; }
+  @media screen and (max-width: 34.375em) {
+    .sidesaddle-module-image {
+      width: 100%;
+      margin-right: 0%;
+      box-sizing: border-box;
+      margin: 0 0 15px 0; } }
 
 .sidesaddle-module-textblock {
   color: #666;
@@ -1086,6 +1117,16 @@ footer {
 .slide-two {
   position: absolute;
   z-index: -1; }
+
+#wrench {
+  fill: #94d31b; }
+
+svg {
+  margin: 0px auto;
+  display: block; }
+  @media screen and (max-width: 28.125em) {
+    svg {
+      width: 60%; } }
 
 .hero-art-resume {
   width: 100%;
@@ -1230,7 +1271,7 @@ footer {
   margin: 0 0 20px 0; }
 
 .resume-subheader {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 0.9375em;
   font-weight: 700;
   margin: 30px 0 15px 0;
@@ -1251,4 +1292,4 @@ footer {
 
 .resume-links {
   text-align: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Montserrat", "Open Sans", sans-serif; }

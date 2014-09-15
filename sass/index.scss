@@ -261,13 +261,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	float:left;
 	max-height:178px;
 	overflow:hidden;
-	padding: 5.4% 0;
 	margin:5px 0 0 0;
 	position:relative;
 	font-size:em(48);
 	color:$aqua;
 	font-family:$icon;
 	text-align: center;
+	position:relative;
+	padding-bottom:20.5%;
+	
+		@media screen and (max-width:em(770)) 
+		{
+		padding-bottom:36%;		
+		}
+	
+	.svg-container
+	{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	height:52px;
+	margin:auto;
+	
+		svg
+		{
+		width:90%;
+		
+		}
+	
+	}
 	
 	&:hover
 	{
@@ -276,6 +300,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	
 	}		
 
+#chevron
+	{
+	padding-top:20px;
+	}
 
 .med-photo-overlay
 	{

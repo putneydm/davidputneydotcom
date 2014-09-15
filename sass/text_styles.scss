@@ -104,7 +104,7 @@ p
 a
 	{
 	@include hoverer ($aqua);
-	transition:color .2s, background .2s;
+	transition:color .2s ease-in-out, background .2s ease-in-out;
 	
 		&:hover
 		{
@@ -192,8 +192,9 @@ a
 	border-radius:2px;
 	margin:0 auto 40px;
 	letter-spacing:.06em;
-	transition:color .2s, background-color .2s;
+	transition:color .2s ease-in-out, background-color .2s ease-in-out;
 	background-image:none;
+	
 	
 		&:hover
 		{

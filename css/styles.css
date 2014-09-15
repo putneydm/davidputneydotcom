@@ -71,7 +71,7 @@ a {
   background-origin: padding-box;
   background-position: 0 95%;
   background-repeat: repeat-x;
-  transition: color .2s, background .2s; }
+  transition: color .2s ease-in-out, background .2s ease-in-out; }
   a:hover {
     color: #245360;
     background-image: -moz-linear-gradient(top, transparent 75%, #245360 75%);
@@ -140,7 +140,7 @@ a {
   border-radius: 2px;
   margin: 0 auto 40px;
   letter-spacing: .06em;
-  transition: color .2s, background-color .2s;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
   background-image: none; }
   .button:hover {
     background-color: #245360;
@@ -193,6 +193,7 @@ main {
   margin: 0px;
   line-height: 80%;
   font-weight: normal;
+  background-color: #F6F5F1;
   background-color: rgba(246, 245, 241, 0.7);
   display: inline-block;
   float: right;
@@ -224,6 +225,7 @@ main {
     padding: 0px;
     line-height: 100%;
     color: #777;
+    background-color: #F6F5F1;
     background-color: rgba(246, 245, 241, 0.7);
     padding: 3px 12px 5px 0; }
     .navigation-menu li a {
@@ -650,15 +652,32 @@ footer {
   float: left;
   max-height: 178px;
   overflow: hidden;
-  padding: 5.4% 0;
   margin: 5px 0 0 0;
   position: relative;
   font-size: 3em;
   color: #4094aa;
   font-family: "icon", sans-serif;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  padding-bottom: 20.5%; }
+  @media screen and (max-width: 48.125em) {
+    .teaser-module-arrow {
+      padding-bottom: 36%; } }
+  .teaser-module-arrow .svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 52px;
+    margin: auto; }
+    .teaser-module-arrow .svg-container svg {
+      width: 90%; }
   .teaser-module-arrow:hover {
     color: #245360; }
+
+#chevron {
+  padding-top: 20px; }
 
 .med-photo-overlay {
   position: absolute;
@@ -1120,13 +1139,6 @@ footer {
 
 #wrench {
   fill: #94d31b; }
-
-svg {
-  margin: 0px auto;
-  display: block; }
-  @media screen and (max-width: 28.125em) {
-    svg {
-      width: 60%; } }
 
 .hero-art-resume {
   width: 100%;

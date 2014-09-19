@@ -4,6 +4,57 @@ $(document) .ready (function ()
 	$('#twitter-link').wrap('<a href="https://twitter.com/putneydm">');  
 	$('#facebook-link').wrap('<a href="	https://www.facebook.com/david.putney">'); 
 
+
+
+
+
+
+
+function set_background(image)
+	{
+
+var window_width = $(window) .width ();	
+
+if (0 < window_width && window_width < 500)
+	{
+	var image_url = 'http://localhost:8888/davidputneyredesign/siteart/' + image + '_small.jpg';
+	
+	}
+
+if (500 < window_width && window_width < 700)
+	{
+	var image_url = 'http://localhost:8888/davidputneyredesign/siteart/' + image + '_med.jpg';
+	
+	}
+	
+if (700 < window_width && window_width < 5000)
+	{
+	var image_url = 'http://localhost:8888/davidputneyredesign/siteart/' + image + '_large.jpg';
+	
+	}
+
+var target = '#' + image;
+	console.log(target);
+    var img = new Image();
+    img.onload = function(){
+      // image  has been loaded
+      $(target).css("background-image","url('"+image_url+"')");
+    };
+    img.src = image_url;
+ 
+ 	}
+ 	
+ 	
+$(".backgound-set").each( function()
+{
+	var image = $(this) .attr ('id');
+		console.log(image);
+	
+	set_background(image)
+});
+
+
+
 $( "a" ).each( function(){
   var href = $( this ).attr( "href" );
   if( href.indexOf( "#" ) !== 0 ){

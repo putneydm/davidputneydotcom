@@ -91,12 +91,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	max-width:1300px;
 	padding:0 0 33%;
 	margin:0;
-	background-image:url('../siteart/white_fade.svg'), url('../siteart/cruxbg_two_inside.png');
-	background-attachment:fixed, fixed;
-	background-size:auto auto, 100% auto;
-	background-position:0 0, center 70px;
+	background-image:url('../siteart/cruxbg_two_inside.png');
+	background-attachment:fixed;
+	background-size:100% auto;
+	background-position:center 70px;
 	position:relative;	
-	background-repeat:repeat, no-repeat;
+	background-repeat:no-repeat;
 	min-height:250px
 	}	
 	

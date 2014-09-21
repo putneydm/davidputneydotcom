@@ -159,18 +159,25 @@ a
 	background-image:none;
 	
 	
+			#arrow
+			{
+			fill:white;
+			transition:fill .2s;
+			}
+
 		&:hover
 		{
 		background-color:$dark_aqua;
 		color:white;
 		background-image:none;
+		
+			#arrow
+			{
+			fill:white;
+			}
+		
 		}
 		
-		.icon
-		{
-		display:inline-block;
-		margin:0 0 0 8px;
-		}
 	
 	}
 	

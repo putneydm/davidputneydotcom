@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> 
 <meta charset="utf-8">
 
+<script src="scripts/jquery-1.11.1.min.js"></script> 
+<script src="scripts/min/modernizr-min.js"></script>
+<!--[if lt IE 9]>
+<script src="scripts/minrespond.min.js"></script>  
+<script src="scripts/min/selectivizr-min.js"></script>  
+
+<![endif]-->
+<script src="scripts/min/picturefill.min.js" async></script>  
+<script src="scripts/min/tappy-min.js"></script> 
+<script src="scripts/min/functions-min.js"></script> 
+
+
+
+
+
+
+ 
+
 <!--
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -39,8 +57,9 @@
 <link rel="canonical" href="http://www.davidputney.com/" />
 <meta name="news_keywords" content="David Putney, design, web design, internet design, web sites, CSS, HTML, jQuery" />
 -->  
-    
 <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" /> 
+
+ 
 
 <!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" href="css/ie_styles.css" />
@@ -50,27 +69,11 @@
 	<link rel="stylesheet" type="text/css" href="css/ie_styles.css" />
 <![endif]-->
 
-<script src="scripts/jquery-1.11.1.min.js"></script> 
-<script src="scripts/min/modernizr-min.js"></script>
-<!--[if lt IE 9]>
-<script src="scripts/minrespond.min.js"></script>  
-<script src="scripts/min/selectivizr-min.js"></script>  
-
-<![endif]-->
-<script src="scripts/min/picturefill.min.js" async></script>  
-<script src="scripts/min/tappy-min.js"></script> 
-<script src="scripts/min/functions-min.js"></script> 
-
-
-
-
-
-
- 
 
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic' rel='stylesheet' type='text/css'> 
+
 
 </head>
 
@@ -85,7 +88,7 @@
 </ul>
  
 
-<div class="hero-art hero-art-resume">
+<div id="cruxbg_inside" class="hero-art hero-art-portfolio backgound-set">
 
 
 
@@ -125,115 +128,222 @@
 </div>
 
 
-
 <main id="main">
 
-
+<section>
 <div class="portfolio-introduction-container">
-<div class="portfolio-introduction">
-<p class="portfolio-project-name">David M. Putney</p>
-<p class="page-subhead">I make the internets. CSS + HTML + jQuery. </p>
+<header class="portfolio-introduction">
+<h1 class="portfolio-project-name">Design</h1>
+<p class="page-subhead">Print this page to PDF for the complete set of vectors. Or to use on the desktop, install FontAwesome.otf, set it as the font in your application, and </p>
+</header>
 </div>
+
+
+<div class="teaser-module-container">
+
+			<article class="teaser-module clearfix">
+		<header>
+			<h4 class="teaser-module-head"><a href="" rel="next">this is a header that goes here</a></h4>
+		</header>
+		
+		<div class="teaser-module-abstract">
+		<p>Sitting behind the computer monitor on Phil Beauregards cluttered desk at a startup called Objective Logistics is a hardcover book published in 2011: the authorized biography of Steve Jobs. <a href="">More </a></p>
+		</div>
+		
+		<a href="" rel="next">
+		<div class="teaser-module-art">
+		<figure class="teaser-module-mainart">
+			<div class="med-photo-overlay"></div>
+
+			<picture>
+				<source srcset="siteart/xsmall.jpg" media="(min-width:770px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:500px)">
+				<source srcset="siteart/xsmall.jpg" media="(min-width:500px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:350px)">
+				<source srcset="siteart/xsmall.jpg">
+				<img src="siteart/medium.jpg" alt="">
+			</picture>	  
+
+		</figure>
+	
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>
+			<img src="siteart/square_80_80.svg" alt="">
+		</figure>	
+		
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>		
+			<img src="siteart/square_80_80.svg" alt="">		
+		</figure>
+		
+		<div class="teaser-module-arrow">
+			<div class="svg-container" aria-hidden="true">
+			
+				<svg width="16" height="28">
+				  <use x="0" y="0" xlink:href="#chevron" />
+				</svg>
+			
+			</div>
+			
+		</div>
+		</div>
+		</a>
+	
+	</article>	
+			<article class="teaser-module clearfix">
+		<header>
+			<h4 class="teaser-module-head"><a href="" rel="next">this is a header that goes here</a></h4>
+		</header>
+		
+		<div class="teaser-module-abstract">
+		<p>Sitting behind the computer monitor on Phil Beauregards cluttered desk at a startup called Objective Logistics is a hardcover book published in 2011: the authorized biography of Steve Jobs. <a href="">More </a></p>
+		</div>
+		
+		<a href="" rel="next">
+		<div class="teaser-module-art">
+		<figure class="teaser-module-mainart">
+			<div class="med-photo-overlay"></div>
+
+			<picture>
+				<source srcset="siteart/xsmall.jpg" media="(min-width:770px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:500px)">
+				<source srcset="siteart/xsmall.jpg" media="(min-width:500px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:350px)">
+				<source srcset="siteart/xsmall.jpg">
+				<img src="siteart/medium.jpg" alt="">
+			</picture>	  
+
+		</figure>
+	
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>
+			<img src="siteart/square_80_80.svg" alt="">
+		</figure>	
+		
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>		
+			<img src="siteart/square_80_80.svg" alt="">		
+		</figure>
+		
+		<div class="teaser-module-arrow">
+			<div class="svg-container" aria-hidden="true">
+			
+				<svg width="16" height="28">
+				  <use x="0" y="0" xlink:href="#chevron" />
+				</svg>
+			
+			</div>
+			
+		</div>
+		</div>
+		</a>
+	
+	</article>			<article class="teaser-module clearfix">
+		<header>
+			<h4 class="teaser-module-head"><a href="" rel="next">this is a header that goes here</a></h4>
+		</header>
+		
+		<div class="teaser-module-abstract">
+		<p>Sitting behind the computer monitor on Phil Beauregards cluttered desk at a startup called Objective Logistics is a hardcover book published in 2011: the authorized biography of Steve Jobs. <a href="">More </a></p>
+		</div>
+		
+		<a href="" rel="next">
+		<div class="teaser-module-art">
+		<figure class="teaser-module-mainart">
+			<div class="med-photo-overlay"></div>
+
+			<picture>
+				<source srcset="siteart/xsmall.jpg" media="(min-width:770px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:500px)">
+				<source srcset="siteart/xsmall.jpg" media="(min-width:500px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:350px)">
+				<source srcset="siteart/xsmall.jpg">
+				<img src="siteart/medium.jpg" alt="">
+			</picture>	  
+
+		</figure>
+	
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>
+			<img src="siteart/square_80_80.svg" alt="">
+		</figure>	
+		
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>		
+			<img src="siteart/square_80_80.svg" alt="">		
+		</figure>
+		
+		<div class="teaser-module-arrow">
+			<div class="svg-container" aria-hidden="true">
+			
+				<svg width="16" height="28">
+				  <use x="0" y="0" xlink:href="#chevron" />
+				</svg>
+			
+			</div>
+			
+		</div>
+		</div>
+		</a>
+	
+	</article>	
+			<article class="teaser-module clearfix">
+		<header>
+			<h4 class="teaser-module-head"><a href="" rel="next">this is a header that goes here</a></h4>
+		</header>
+		
+		<div class="teaser-module-abstract">
+		<p>Sitting behind the computer monitor on Phil Beauregards cluttered desk at a startup called Objective Logistics is a hardcover book published in 2011: the authorized biography of Steve Jobs. <a href="">More </a></p>
+		</div>
+		
+		<a href="" rel="next">
+		<div class="teaser-module-art">
+		<figure class="teaser-module-mainart">
+			<div class="med-photo-overlay"></div>
+
+			<picture>
+				<source srcset="siteart/xsmall.jpg" media="(min-width:770px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:500px)">
+				<source srcset="siteart/xsmall.jpg" media="(min-width:500px)">
+				<source srcset="siteart/medium.jpg" media="(min-width:350px)">
+				<source srcset="siteart/xsmall.jpg">
+				<img src="siteart/medium.jpg" alt="">
+			</picture>	  
+
+		</figure>
+	
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>
+			<img src="siteart/square_80_80.svg" alt="">
+		</figure>	
+		
+		<figure class="teaser-module-secondary">
+			<div class="round-photo-overlay"></div>		
+			<img src="siteart/square_80_80.svg" alt="">		
+		</figure>
+		
+		<div class="teaser-module-arrow">
+			<div class="svg-container" aria-hidden="true">
+			
+				<svg width="16" height="28">
+				  <use x="0" y="0" xlink:href="#chevron" />
+				</svg>
+			
+			</div>
+			
+		</div>
+		</div>
+		</a>
+	
+	</article>
+
 </div>
+	
 
-	<div class="resume_container">
-	
-	
-	<section class="resume-section clearfix">
-	
-	<h1 class="resume-section-header"><span>~</span> BostonGlobe.com <span>~</span> </h1>
 
-	<ul class="resume-details">
-		<li>
-		<article class="resume-information">
-		<h2 class="hidden">What I do</h2>
-		<p class="resume-info-line">Boston, Mass, 2012-present</p>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>
-	</li>
-
-	<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer and developer for Cruxnow.com</h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer of BDCwire.com</h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>
-	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer of RadioBDC.com</h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Contributed to design of The Social Countdown</h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-		
-		</ul>
-	
-	</section>
-	
-	
-	<section class="resume-section">
-	
-	<h2 class="resume-section-header"><span>~</span> PilotOnline.com <span>~</span> </h2>
-		<article class="resume-information">
-		<h2 class="hidden">What I do</h2>
-		<p class="resume-info-line">Boston, Mass, 2012-present</p>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>
-	
-	<ul class="resume-details">
-	<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer and developer for Cruxnow.com</h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer of <a href="" rel="nofollow">BDCwire.com</a></h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>
-	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Designer of <a href="" rel="nofollow">RadioBDC.com</a></h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-	
-		<li>
-		<article class="resume-information">
-		<h3 class="resume-subheader">Contributed to design of  <a href="" rel="nofollow">The Social Countdown</a></h3>
-		<p>A Boston company is proposing to redevelop a drab cluster of office buildings near Faneuil Hall into a more modern commercial complex with restaurants, stores, hotel rooms and residences. The plan by Related Beal would retain a large </p>
-		</article>	
-	</li>	
-		
-		</ul>
-	
-	</section>
-
-	</div>
-
+</section>
 
 </main>
-
 
 <footer class="site-footer">
 
@@ -345,6 +455,7 @@
 </svg> 
 </div>
  
-
 </body>
+
+
 </html>

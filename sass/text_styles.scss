@@ -98,33 +98,32 @@ a
 	
 .section-header
 	{
-	font-size:em(42);
+	font-size:em(36);
 	text-transform: uppercase;
 	font-style: italic;
-	font-family:'surveyor';
+	font-family:$serif;
 	font-weight:normal;
 	text-align:center;
 	color:$aqua;
-	letter-spacing: 0.02em;
 	transform:font-size .3s;
 	
 				@media screen and (max-width:em(500)) 
 				{
-				font-size:em(30);
+				font-size:em(24);
 				}
 	
 		span
 		{
-		color:#666;	
+		color:$med;	
 		}
 	
 	}
 	
 .page-subhead
 	{
-	font-size:em(24);
+	font-size:em(22);
 	font-style: italic;
-	font-family:'surveyor';
+	font-family:$serif;	
 	font-weight:normal;
 	text-align:center;
 	color:$body;
@@ -133,8 +132,8 @@ a
 	
 		@media screen and (max-width:em(500)) 
 		{
-		font-size:em(18.5);
-		line-height:120%;
+		font-size:em(18);
+		line-height:130%;
 		margin:0 0 20px 0;
 		}
 

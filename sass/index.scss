@@ -157,22 +157,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	{
 	@include spanner_too (12, 1100, 0, 12);	
 	}
+
+	}
 	
-		a
+.teaser-module-abstract-link
+	{
+	font-family:$sans;
+	color:$aqua;
+	margin:0px 4px 0 0;
+	font-weight:600;
+	text-decoration:none;
+	background:none;
+	display:inline-block;
+	
+	#arrow
+	{
+	fill:$aqua;
+	transition:fill .2s;
+	}
+
+		&:hover
 		{
-		color:$aqua;
-		margin:5px 5px 0 0;
-		font-weight:600;
-		text-decoration:none;
+		color:$dark_aqua;
+		background-image:none;
 		
-			&:hover
+			#arrow
 			{
-			@include hoverer($dark_aqua);
+			fill:$dark_aqua;
 			}
 		
 		}
 	
 	}
+
 	
 .teaser-module-art
 	{
@@ -274,8 +291,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	
 		@media screen and (max-width:em(770)) 
 		{
-		padding-bottom:36%;		
+		padding-bottom:36%;	
 		}
+	
+	svg
+	{
+	width:55%;
+	transition:width .2s;
+	}
+
+	#chevron
+	{
+	transition:fill .2s;
+	}
+
+		
+	&:hover
+	{
+	#chevron
+	{
+	fill:$dark_aqua;
+	}
+	
+	svg
+	{
+	width:37%;
+	}
+	
+
+	}	
+
 	
 	.svg-container
 	{
@@ -287,12 +332,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	height:52px;
 	margin:auto;
 	
-		svg
-		{
-		width:90%;
-		
-		}
-	
 	}
 	
 	&:hover
@@ -302,7 +341,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	
 	}		
 
-#chevron
+.chevron
 	{
 	padding-top:20px;
 	}

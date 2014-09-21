@@ -520,10 +520,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	max-width:1300px;
 	padding:0 0 20%;
 	margin:0;
-	background-image:url('../siteart/dots.svg'), url('../siteart/code.png'), ;
+	background-image:url('../siteart/code_bg.jpg');
 	background-attachment:fixed;
-	background-size:auto auto, 100% auto;
+	background-size:100% auto;
 	position:relative;	
+	min-height:250px;
+	
+		@media screen and (max-width:em(750)) 
+				{
+				background-image:url('../siteart/code_bg_med.jpg');
+				height:250px;
+				}
+	
+				@media screen and (max-width:em(425)) 
+				{
+				background-image:url('../siteart/code_bg_small.jpg');
+				height:250px;
+				}
+	
 	}
 	
 	

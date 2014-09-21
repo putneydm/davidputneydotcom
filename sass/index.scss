@@ -488,14 +488,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 
 .triple-module-head
 	{
-	font-size:em(24);
-	font-family:'surveyor';
+	font-size:em(22);
+	font-family:$serif;
 	font-style:italic;	
 	margin:0 0 15px;
 		
 		@media screen and (max-width:em(825)) 
 		{
-		font-size:em(20);
+		font-size:em(18);
 		}
 	
 	}

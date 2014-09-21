@@ -9,29 +9,27 @@
 
 .main_header_nameplate
 	{
-	font-family:'surveyor';
-	font-style:italic;
+	font-family:$sans;
 	text-transform:uppercase;
-	font-size:em(65);
-	letter-spacing:.02em;
+	font-size:em(48);
 	text-align:left;
 	margin:0px;
 	line-height:80%;
-	font-weight:normal;
 	background-color:$haze;
 	background-color:rgba($haze, .7);
 	display:inline-block;
 	float:right;
 	padding:6px 20px 8px;
+	
 
 				@media screen and (max-width:em(600)) 
 				{
-				font-size:em(48);
+				font-size:em(42);
 				}
 				
 				@media screen and (max-width:em(450)) 
 				{
-				font-size:em(30);
+				font-size:em(24);
 				}
 
 	a
@@ -39,6 +37,15 @@
 	background-image:none;
 	}
 	
+	.kern-fix
+	{
+	letter-spacing: -.09em;
+	}
+
+	.kern-fix-two
+	{
+	letter-spacing: -.03em;
+	}	
 	
 	}
 	

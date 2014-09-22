@@ -46,8 +46,17 @@
 	$gutter_subtract: $gutter_calc / $number_of_columns;
 	
 	width: (($box_calc + $gutter_subtract) - $gutter_calc) * $span;
-	margin-right: $gutter_calc;	
-	box-sizing:border-box;
+	
+	@if $gutter_calc == 0% 
+	 {
+    margin-right:0;
+	} 
+
+	@if $gutter_calc != 0% 
+	 {
+    margin-right:$gutter_calc;
+	} 
+
 	}	
 		
 	

@@ -35,7 +35,7 @@
 		background-image:none;
 		box-shadow:-1px -1px 1px rgba($med, .1);
 		
-		#mail, #twitter, #facebook, #github
+		.mail, .twitter, .facebook, .github
 		{
 		transition: fill .2s;	
 		}
@@ -46,7 +46,7 @@
 		background-color:$aqua;
 		color:white;
 		
-		#mail, #twitter, #facebook, #github
+		.mail, .twitter, .facebook, .github
 		{
 		fill:white;		
 		}
@@ -81,7 +81,6 @@
 	height:40px;
 	border-radius:50%;
 	background-color:$aqua;
-	display:block;
 	text-align:center;
 	line-height:40px;
 	color:white;
@@ -96,10 +95,9 @@
 
 	}
 	
-#up_arrow
+.up-arrow
 	{
-	fill:white;
-	
+	fill:white;	
 	}
 	
 .footer-tagline	
@@ -108,13 +106,13 @@
 	font-size:em(11);
 	text-align:center;
 	margin:0 0 5px 0;
-	padding:0px;
+	padding:0;
 	}
 	
 	
 .svg-import	
 	{
-	height:0px;
-	width:0px;
+	height:0;
+	width:0;
 	overflow:hidden;	
 	}

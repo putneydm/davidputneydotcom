@@ -57,7 +57,7 @@
 	font-family:$sans;
 	font-size:em(15);
 	font-weight:700;
-	margin:0 0 0px 0;
+	margin:0 0 0 0;
 	
 		@media screen and (max-width:em(500)) 
 		{
@@ -83,7 +83,7 @@
 	font-family:$sans;
 	font-size:em(15);
 	font-weight:700;
-	margin:0 0 0px 0;
+	margin:0 0 0 0;
 	
 		@media screen and (max-width:em(500)) 
 		{
@@ -175,7 +175,7 @@
 	font-size:em(15);
 	font-weight:700;
 	margin:30px 0 15px 0;
-	padding:0px 0 10px 0;
+	padding:0 0 10px 0;
 	text-align:center;
 	background-image: -moz-linear-gradient(top, transparent 75%, $dark 75%);
 	background-image: -webkit-linear-gradient(top, transparent 75%, $dark 75%);

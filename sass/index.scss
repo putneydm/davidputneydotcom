@@ -3,13 +3,8 @@
 @import "mixins";
 @import "variables";
 
-
 @import "text_styles";
 @import "common";
-
-
-
-
 
 
 .teaser-module-container
@@ -28,7 +23,7 @@
 .teaser-module
 	{
 	@include spanner_too (12, 1100, 0, 12);
-	margin:0 0 40px 0;
+	margin:0 0 60px 0;
 	}
 	
 .teaser-module-head
@@ -58,6 +53,7 @@
 	@include spanner_too (12, 1100, 0, 4);
 	float:left;
 	margin:5px 0 0 0;
+	padding:0 8px 0 0;
 	
 	@media screen and (max-width:em(500)) 
 	{
@@ -105,7 +101,8 @@
 
 		@media screen and (max-width:em(500)) 
 		{
-		@include spanner_too (12, 1100, 0, 12);	
+		@include spanner_too (12, 1100, 0, 12);
+		border-left:0px;
 		}
 	
 	
@@ -125,7 +122,12 @@
 		{
 		@include spanner_too (8, 678, 0, 8);
 		}
-	
+		
+		@media screen and (max-width:em(500)) 
+		{
+		padding:5px 0 0 0;	
+		}
+
 		img
 		{
 		width:100%;
@@ -143,7 +145,7 @@
 	
 .teaser-module-secondary
 	{
-	margin:5px 0 40px 0;
+	margin:5px 0 0 0;
 	@include spanner_too (8, 678, 0, 1.75);
 	display:block;
 	float:left;
@@ -157,6 +159,11 @@
 		@include spanner_too (8, 678, 0, 3);
 		}
 	
+		@media screen and (max-width:em(500)) 
+		{
+		padding:0;
+		margin:5px 5px 0 0;
+		}
 
 		img
 		{

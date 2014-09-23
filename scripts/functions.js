@@ -74,10 +74,12 @@ function page_scroller()
 
 $('#menu-button' ).bind( "tap", function( e ){ 
  
-  	var id = '#' + $('#menu-button').closest("navigation").attr("id");
+ 	console.log('works');
+ 
+  	var id = '#' + $('#menu-button').closest("nav").attr("id");
  	var menu_height = $(id) .height ();
  	
- if (menu_height === 40)
+ if (menu_height < 45)
 	 {
 	 $(id) .addClass ('menu-active');
 	  	console.log(menu_height);

@@ -209,7 +209,7 @@ a {
     .secondary-header-button {
       display: block; } }
 
-#close_box {
+.close-box {
   fill: #999; }
 
 .inside-header {

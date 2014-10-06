@@ -19,6 +19,13 @@
 		transition: top .15s ease-in-out, height .15s ease-in-out;
 		}
 	
+				@media screen and (max-width:em(425)) 
+				{
+				top:0px;
+				box-shadow:0 0 8px rgba(#999, .8);
+				}
+	
+	
 	}
 
 .menu-active

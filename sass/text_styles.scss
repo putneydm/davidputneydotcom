@@ -129,9 +129,7 @@ ul
 	
 	}
 	
-	
 
-	
 .blog-headline
 	{
 	font-size:em(22);
@@ -143,6 +141,18 @@ ul
 		{
 		font-size:em(18);
 		}
+	
+	a
+	{
+	color:$body;
+	background-image:none;
+		&:hover
+		{
+		color:$aqua;
+		}
+		
+	
+	}
 	
 	}
 	

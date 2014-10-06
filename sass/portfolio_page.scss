@@ -12,7 +12,18 @@
 	background-position:center 70px;
 	position:relative;	
 	background-repeat:no-repeat;
-	min-height:250px
+	min-height:250px;
+	
+				@media screen and (max-width:em(750)) 
+				{
+				background-image:url('../siteart/cruxbg_two_inside.png');
+				}
+				
+				@media screen and (max-width:em(500)) 
+				{
+				background-image:url('../siteart/cruxbg_two_inside.png');
+				}				
+	
 	}	
 	
 	

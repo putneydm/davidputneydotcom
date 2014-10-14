@@ -32,7 +32,7 @@ font-family:$droid;
 a
 	{
 	@include hoverer ($aqua);
-	transition:color .2s ease-in-out, background .2s ease-in-out;
+	transition:color .2s ease-in, background .2s ease-in;
 	text-decoration:none;
 
 		&:hover

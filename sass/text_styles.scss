@@ -101,10 +101,15 @@ ul
 	height:55px;
 	text-align:center;
 	border-radius:2px;
-	margin:0 auto 40px;
+	margin:0 auto 60px;
 	letter-spacing:.06em;
-	transition:color .2s ease-in-out, background-color .2s ease-in-out;
+	transition:color .2s ease-in, background-color .2s ease-in;
 	background-image:none;
+	
+		@media screen and (max-width:em(520)) 
+		{
+		width:96%;
+		}
 	
 	
 			.arrow

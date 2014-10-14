@@ -377,5 +377,101 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	z-index:-1;
 	}	
 
-	
+.reefers
+	{
+	}
 
+	
+.reefers-head
+	{
+	font-size:em(14);
+	text-align:center;
+	color:$dark;
+	font-family:$sans;
+	margin:0 0 15px 0;
+	}
+	
+.reefers-list
+	{
+	text-align:center;
+	margin:0 auto 60px;
+	
+	li
+	{
+	@include spanner_too (8, 1200, 8, 1);
+	display:inline-block;	
+	max-width:130px;
+	font-family:$sans;
+	font-size:em(13);
+
+	
+		@media screen and (max-width:em(850)) 
+		{
+		@include spanner_too (5, 650, 10, 1);
+		max-width:none;
+		}
+		
+		@media screen and (max-width:em(500)) 
+		{
+		@include spanner_too (3, 500, 10, 1);
+		max-width:100px;
+		margin-bottom:15px;
+		}	
+		
+	
+		&:last-child
+			{
+			margin-right:0px;
+			
+			}
+	
+	
+	}
+
+	a
+	{
+	background-image:none;
+	color:$med;
+	background-image:none;
+	display:block;
+	height:auto;
+	width:100%;
+	
+		&:hover
+		{
+		color:$aqua;
+		
+		.reefers-image
+		{
+		background-color:$aqua;
+			img
+			{
+			opacity: 0.8;
+			}
+		
+		
+		}
+		
+		}
+	
+	
+	}
+	
+	}
+	
+.reefers-image
+	{
+	width:100%;
+	margin:0 0 8px 0;
+
+	
+	img
+		{
+		width:100%;
+		transition:opacity .25s ease-in-out;
+		}
+	
+	
+	}
+	
+	

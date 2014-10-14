@@ -10,12 +10,12 @@
 .teaser-module-container
 	{
 	margin:0 auto;
-	padding:60px 40px 0;
+	padding:80px 40px 0;
 	max-width:1100px;
 	
 		@media screen and (max-width:em(450)) 
 		{
-		padding:60px 10px 0;
+		padding:40px 10px 0;
 		}
 	
 	}
@@ -55,6 +55,12 @@
 	margin:5px 0 0 0;
 	padding:0 8px 0 0;
 	
+		p
+		{
+		font-size:em(14);
+		
+		}
+	
 	@media screen and (max-width:em(500)) 
 	{
 	@include spanner_too (12, 1100, 0, 12);	
@@ -67,10 +73,11 @@
 	font-family:$sans;
 	color:$aqua;
 	margin:0 4px 0 0;
-	font-weight:800;
+	font-weight:700;
 	text-decoration:none;
 	background:none;
 	display:inline-block;	
+	font-size:em(14);
 	
 	.arrow
 	{
@@ -292,9 +299,9 @@
 .hero-art-secondary
 	{
 	width:100%;
-	max-width:1300px;
+	max-width:1600px;
 	padding:0 0 20%;
-	margin:0;
+	margin:0 auto;
 	background-image:url('../siteart/code_bg.jpg');
 	background-attachment:fixed;
 	background-size:100% auto;

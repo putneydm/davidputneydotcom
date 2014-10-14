@@ -3,7 +3,8 @@ $(document) .ready (function ()
 	$('#email-link').wrap('<a href="mailto:david@davidputney.com?Subject=Website%20feedback" target="_top">');  
 	$('#twitter-link').wrap('<a href="https://twitter.com/putneydm">');  
 	$('#facebook-link').wrap('<a href="	https://www.facebook.com/david.putney">'); 
-
+	
+	
 
 function set_background(image)
 	{
@@ -12,21 +13,23 @@ var window_width = $(window) .width ();
 
 if (0 < window_width && window_width < 500)
 	{
-	var image_url = 'siteart/' + image + '_small.jpg';	
+	var image_url = file_path + 'sm_hero_' + image + '.jpg';	
 	}
 
 if (500 < window_width && window_width < 700)
 	{
-	var image_url = 'siteart/' + image + '_med.jpg';	
+	var image_url = file_path + 'med_hero_' + image + '.jpg';	
 	}
 	
 if (700 < window_width && window_width < 5000)
 	{
-	var image_url = 'siteart/' + image + '_large.jpg';	
+	var image_url = file_path + 'hero_' + image + '.jpg';	
 	}
 
+	console.log('iu' + image_url);
+
 var target = '#' + image;
-	console.log(target);
+
     var img = new Image();
     img.onload = function(){
       // image  has been loaded
@@ -40,8 +43,6 @@ var target = '#' + image;
 $(".backgound-set").each( function()
 {
 	var image = $(this) .attr ('id');
-		console.log(image);
-	
 	set_background(image)
 });
 

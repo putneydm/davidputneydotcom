@@ -6,6 +6,7 @@
 	background-color:$haze;
 	top:-50px;
 	z-index:100;
+	padding:0 30px;
 	
 		@media screen and (max-width:em(750)) 
 		{
@@ -16,13 +17,14 @@
 		{
 		height:40px;
 		overflow:hidden;
-		transition: top .15s ease-in-out, height .15s ease-in-out;
+		transition: top .15s ease-in, height .15s ease-in;
 		}
 	
 				@media screen and (max-width:em(425)) 
 				{
 				top:0px;
 				box-shadow:0 0 8px rgba(#999, .8);
+				box-shadow-blend-mode: multiply;
 				}
 	
 	
@@ -37,6 +39,7 @@
 {
 top:0;
 box-shadow:0 0 8px rgba(#999, .8);
+box-shadow-blend-mode: multiply;
 }	
 	
 .secondary-navigation-menu

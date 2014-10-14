@@ -7,6 +7,7 @@
 	padding:0 0 40% !important;
 	margin:0;
 	background-image:url('siteart/cruxbg_inside_placeholder.jpg');
+	background-image:url('<$mt:BlogURL$>siteart/pl_hero_<$mt:Var name="hero_art"$>.jpg');
 	background-attachment:fixed;
 	background-size:100% auto;
 	background-position:center 60px;
@@ -18,6 +19,7 @@
 		@media screen and (max-width:em(700)) 
 		{
 		background-image:url('siteart/cruxbg_inside_med.jpg');
+		background-image:url('<$mt:BlogURL$>siteart/pl_hero_small_<$mt:Var name="hero_art"$>.jpg');
 		height:300px;
 		background-size:auto 300px;
 		background-position:center 50px;	

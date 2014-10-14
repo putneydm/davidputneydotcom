@@ -3,34 +3,31 @@
 .hero-art-portfolio
 	{
 	width:100%;
-	max-width:1300px;
-	padding:0 0 40% !important;
-	margin:0;
-	background-image:url('siteart/cruxbg_inside_placeholder.jpg');
+	max-width:1600px;
+	padding:0 0 42% !important;
+	margin:0 auto;
 	background-image:url('<$mt:BlogURL$>siteart/pl_hero_<$mt:Var name="hero_art"$>.jpg');
 	background-attachment:fixed;
 	background-size:100% auto;
-	background-position:center 60px;
+	background-position:center 80px;
 	background-repeat:no-repeat;
 	position:relative;
 	overflow:hidden;
 	
-	
-		@media screen and (max-width:em(700)) 
+		@media screen and (max-width:em(850)) 
 		{
-		background-image:url('siteart/cruxbg_inside_med.jpg');
+		background-position:center 50px;	
+		}
+	
+	
+		@media screen and (max-width:em(750)) 
+		{
 		background-image:url('<$mt:BlogURL$>siteart/pl_hero_small_<$mt:Var name="hero_art"$>.jpg');
 		height:300px;
 		background-size:auto 300px;
-		background-position:center 50px;	
+		background-position:center 40px;	
 		}
-
-		@media screen and (max-width:em(500)) 
-		{
-		background-size:500px auto;
-		background-position:center 50px;
-		background-image:url('siteart/cruxbg_inside_small_placeholder.jpg');
-		}			
+		
 	}
 	
 	

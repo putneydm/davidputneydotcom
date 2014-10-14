@@ -1,10 +1,11 @@
 .site-footer
 	{
-	height:230px;
+	height:330px;
 	width:100%;
 	background-color:#f6f5f1;
+	display:block;
 	}
-	
+
 	
 .footer-links
 	{
@@ -18,7 +19,7 @@
 	width:55px;
 	height:55px;
 	display:inline-block;
-	margin:40px 12px 0;
+	margin:0 12px 0;
 	
 		a
 		{
@@ -30,7 +31,7 @@
 		height:55px;
 		font-size:em(18);
 		color:$aqua;
-		transition:background-color .2s ease-in-out;	
+		transition:background-color .2s ease-in;	
 		background-image:none;
 		box-shadow:-1px -1px 1px rgba($med, .1);
 		

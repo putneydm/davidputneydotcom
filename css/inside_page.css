@@ -36,7 +36,7 @@ a {
   background-origin: padding-box;
   background-position: 0 95%;
   background-repeat: repeat-x;
-  transition: color .2s ease-in-out, background .2s ease-in-out;
+  transition: color .2s ease-in, background .2s ease-in;
   text-decoration: none; }
   a:hover {
     color: #245360;
@@ -102,7 +102,7 @@ a {
     .secondary-header, .inside-header {
       height: 40px;
       overflow: hidden;
-      transition: top .15s ease-in-out, height .15s ease-in-out; } }
+      transition: top .15s ease-in, height .15s ease-in; } }
 
 .menu-active {
   height: 190px; }
@@ -217,7 +217,7 @@ a {
   box-shadow: 0 0 8px rgba(153, 153, 153, 0.8); }
   @media screen and (max-width: 46.875em) {
     .inside-header {
-      transition: height .15s ease-in-out; } }
+      transition: height .15s ease-in; } }
   @media screen and (max-width: 37.5em) {
     .inside-header {
       overflow: hidden; } }

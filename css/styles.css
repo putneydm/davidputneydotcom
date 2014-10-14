@@ -21,7 +21,7 @@ a img {
   display: block; }
 
 p {
-  font-family: "Droid Serif", georgia, serif;
+  font-family: "Droid Serif", georgia, times, serif;
   font-size: 0.83125em;
   line-height: 150%;
   margin: 0 0 0.84375em 0; }
@@ -32,7 +32,7 @@ ul {
     list-style-type: none; }
 
 .section-header, .resume-section-header {
-  font-size: 2.25em;
+  font-size: 1.875em;
   text-transform: uppercase;
   font-style: italic;
   font-family: "Merriweather", georgia, times, serif;
@@ -54,18 +54,21 @@ ul {
   max-width: 500px;
   background-color: #4094aa;
   color: white;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-weight: 700;
   font-size: 0.75em;
   padding: 20px 0;
   height: 55px;
   text-align: center;
   border-radius: 2px;
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
   letter-spacing: .06em;
-  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-          transition: color .2s ease-in-out, background-color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+          transition: color .2s ease-in, background-color .2s ease-in;
   background-image: none; }
+  @media screen and (max-width: 32.5em) {
+    .button {
+      width: 96%; } }
   .button .arrow {
     fill: white;
     -webkit-transition: fill .2s;
@@ -79,7 +82,7 @@ ul {
 
 .blog-headline {
   font-size: 1.375em;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   margin: 0 10px 15px;
   text-align: center; }
   @media screen and (max-width: 31.25em) {
@@ -97,9 +100,10 @@ ul {
   font-size: 0.875em; }
 
 .site-footer {
-  height: 230px;
+  height: 330px;
   width: 100%;
-  background-color: #f6f5f1; }
+  background-color: #f6f5f1;
+  display: block; }
 
 .footer-links {
   width: 100%;
@@ -109,19 +113,18 @@ ul {
     width: 55px;
     height: 55px;
     display: inline-block;
-    margin: 40px 12px 0; }
+    margin: 0 12px 0; }
     .footer-links li a {
       display: block;
       border-radius: 50%;
-      font-family: "icon", sans-serif;
       background-color: white;
       padding-top: 18px;
       width: 55px;
       height: 55px;
       font-size: 1.125em;
       color: #4094aa;
-      -webkit-transition: background-color .2s ease-in-out;
-              transition: background-color .2s ease-in-out;
+      -webkit-transition: background-color .2s ease-in;
+              transition: background-color .2s ease-in;
       background-image: none;
       box-shadow: -1px -1px 1px rgba(153, 153, 153, 0.1); }
       .footer-links li a .mail, .footer-links li a .twitter, .footer-links li a .facebook, .footer-links li a .github {
@@ -170,6 +173,52 @@ ul {
   width: 0;
   overflow: hidden; }
 
+.footer-navigation-menu {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 40px;
+  background-image: -webkit-linear-gradient(top, transparent 75%, #999 75%);
+  background-image: linear-gradient(to bottom, transparent 75%, #999 75%);
+  background-size: 60% 2px;
+  background-origin: padding-box;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  padding: 0 0 25px; }
+  @media screen and (max-width: 26.25em) {
+    .footer-navigation-menu {
+      margin: 0px auto 20px; } }
+  .footer-navigation-menu li {
+    display: inline-block;
+    font-family: "Merriweather", georgia, times, serif;
+    font-style: italic;
+    font-size: 1.25em;
+    margin: 40px 0 0;
+    text-transform: capitalize; }
+    @media screen and (max-width: 28.125em) {
+      .footer-navigation-menu li {
+        font-size: 1em; } }
+    .footer-navigation-menu li:after {
+      content: ' | |';
+      display: inline-block;
+      margin: 0 15px;
+      color: #d0d0d0;
+      letter-spacing: -.2em; }
+      @media screen and (max-width: 26.25em) {
+        .footer-navigation-menu li:after {
+          margin: 0 5px; } }
+    .footer-navigation-menu li:nth-child(4):after {
+      content: '';
+      margin: 0px; }
+    @media screen and (max-width: 26.25em) {
+      .footer-navigation-menu li {
+        margin: 20px 0 0;
+        font-size: 1em; } }
+    .footer-navigation-menu li a {
+      color: #999;
+      background: none; }
+      .footer-navigation-menu li a:hover {
+        color: #4094aa; }
+
 /* mixins */
 /* makes a multicolumn responsive box */
 /* colors */
@@ -192,7 +241,7 @@ a img {
   display: block; }
 
 p {
-  font-family: "Droid Serif", georgia, serif;
+  font-family: "Droid Serif", georgia, times, serif;
   font-size: 0.83125em;
   line-height: 150%;
   margin: 0 0 0.84375em 0; }
@@ -203,7 +252,7 @@ ul {
     list-style-type: none; }
 
 .section-header, .resume-section-header {
-  font-size: 2.25em;
+  font-size: 1.875em;
   text-transform: uppercase;
   font-style: italic;
   font-family: "Merriweather", georgia, times, serif;
@@ -225,18 +274,21 @@ ul {
   max-width: 500px;
   background-color: #4094aa;
   color: white;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-weight: 700;
   font-size: 0.75em;
   padding: 20px 0;
   height: 55px;
   text-align: center;
   border-radius: 2px;
-  margin: 0 auto 40px;
+  margin: 0 auto 60px;
   letter-spacing: .06em;
-  -webkit-transition: color .2s ease-in-out, background-color .2s ease-in-out;
-          transition: color .2s ease-in-out, background-color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in, background-color .2s ease-in;
+          transition: color .2s ease-in, background-color .2s ease-in;
   background-image: none; }
+  @media screen and (max-width: 32.5em) {
+    .button {
+      width: 96%; } }
   .button .arrow {
     fill: white;
     -webkit-transition: fill .2s;
@@ -250,7 +302,7 @@ ul {
 
 .blog-headline {
   font-size: 1.375em;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   margin: 0 10px 15px;
   text-align: center; }
   @media screen and (max-width: 31.25em) {
@@ -275,11 +327,11 @@ main {
 
 .teaser-module-container, .resume_container {
   margin: 0 auto;
-  padding: 60px 40px 0;
+  padding: 80px 40px 0;
   max-width: 1100px; }
   @media screen and (max-width: 28.125em) {
     .teaser-module-container, .resume_container {
-      padding: 60px 10px 0; } }
+      padding: 40px 10px 0; } }
 
 .teaser-module {
   width: 100%;
@@ -287,7 +339,7 @@ main {
   margin: 0 0 60px 0; }
 
 .teaser-module-head {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-size: 1em;
   border-bottom: 1px solid #d0d0d0;
   font-weight: 800;
@@ -306,19 +358,22 @@ main {
   float: left;
   margin: 5px 0 0 0;
   padding: 0 8px 0 0; }
+  .teaser-module-abstract p {
+    font-size: 0.875em; }
   @media screen and (max-width: 31.25em) {
     .teaser-module-abstract {
       width: 100%;
       margin-right: 0; } }
 
 .teaser-module-abstract-link, .search-results-link {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   color: #4094aa;
   margin: 0 4px 0 0;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   background: none;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 0.875em; }
   .teaser-module-abstract-link .arrow, .search-results-link .arrow {
     fill: #4094aa;
     -webkit-transition: fill .2s;
@@ -397,7 +452,6 @@ main {
   position: relative;
   font-size: 3em;
   color: #4094aa;
-  font-family: "icon", sans-serif;
   text-align: center;
   position: relative;
   padding-bottom: 20.5%; }
@@ -454,9 +508,9 @@ main {
 
 .hero-art-secondary {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1600px;
   padding: 0 0 20%;
-  margin: 0;
+  margin: 0 auto;
   background-image: url("../siteart/code_bg.jpg");
   background-attachment: fixed;
   background-size: 100% auto;
@@ -473,9 +527,9 @@ main {
 
 .hero-art-secondary-portfolio {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1600px;
   padding: 0 0 33%;
-  margin: 0;
+  margin: 0 auto;
   background-image: url("../siteart/cruxbg_two_inside.png");
   background-attachment: fixed;
   background-size: 100% auto;
@@ -489,6 +543,46 @@ main {
   @media screen and (max-width: 31.25em) {
     .hero-art-secondary-portfolio {
       background-image: url("../siteart/cruxbg_two_inside.png"); } }
+
+.secondary-hero-art-shadow-portfolio {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid #d0d0d0;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0, 0, 0, 0.15)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.15) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 );
+  /* IE6-8 */ }
+
+.secondary-hero-art-shadow-top-portfolio {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  border-top: 1px solid #d0d0d0;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjI1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.25)), color-stop(100%, transparent));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-8 */ }
 
 .big-image-module {
   width: 100%;
@@ -522,7 +616,7 @@ main {
   color: #666;
   font-size: 1em;
   line-height: 150%;
-  font-family: "Droid Serif", georgia, serif;
+  font-family: "Droid Serif", georgia, times, serif;
   margin: 0 0 30px 0; }
   @media screen and (max-width: 46.875em) {
     .big-image-module-text-block {
@@ -534,7 +628,8 @@ main {
 
 .big-image-module-image-container {
   width: 100%;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 80px; }
 
 .big-image-module-main {
   width: 58.33333%;
@@ -600,7 +695,8 @@ main {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 80px; }
 
 .triple-module-portfolio {
   width: 100.0%;
@@ -661,21 +757,21 @@ main {
 
 .triple-module-head-portfolio {
   font-size: 1em;
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   margin: 0 0 15px;
   font-weight: 700; }
 
-.triple-module-text {
+.triple-module-text-portfolio {
   font-size: 1em;
-  color: #888;
   line-height: 160%; }
   @media screen and (max-width: 51.5625em) {
-    .triple-module-text {
+    .triple-module-text-portfolio {
       font-size: 0.875em; } }
 
 .sidesaddle-module {
   width: 100%;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-bottom: 80px; }
 
 .sidesaddle-module-image {
   float: right;
@@ -694,7 +790,7 @@ main {
   color: #666;
   font-size: 1em;
   line-height: 150%;
-  font-family: "Droid Serif", georgia, serif; }
+  font-family: "Droid Serif", georgia, times, serif; }
 
 .slideshow {
   padding-bottom: 18.5%; }
@@ -709,6 +805,58 @@ main {
 .slide-two {
   position: absolute;
   z-index: -1; }
+
+.reefers-head {
+  font-size: 0.875em;
+  text-align: center;
+  color: #666;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  margin: 0 0 15px 0; }
+
+.reefers-list {
+  text-align: center;
+  margin: 0 auto 60px; }
+  .reefers-list li {
+    width: 11.91667%;
+    margin-right: 0.66667%;
+    display: inline-block;
+    max-width: 130px;
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    font-size: 0.8125em; }
+    @media screen and (max-width: 53.125em) {
+      .reefers-list li {
+        width: 18.76923%;
+        margin-right: 1.53846%;
+        max-width: none; } }
+    @media screen and (max-width: 31.25em) {
+      .reefers-list li {
+        width: 32.0%;
+        margin-right: 2%;
+        max-width: 100px;
+        margin-bottom: 15px; } }
+    .reefers-list li:last-child {
+      margin-right: 0px; }
+  .reefers-list a {
+    background-image: none;
+    color: #999;
+    background-image: none;
+    display: block;
+    height: auto;
+    width: 100%; }
+    .reefers-list a:hover {
+      color: #4094aa; }
+      .reefers-list a:hover .reefers-image {
+        background-color: #4094aa; }
+        .reefers-list a:hover .reefers-image img {
+          opacity: 0.8; }
+
+.reefers-image {
+  width: 100%;
+  margin: 0 0 8px 0; }
+  .reefers-image img {
+    width: 100%;
+    -webkit-transition: opacity .25s ease-in-out;
+            transition: opacity .25s ease-in-out; }
 
 .hero-art-resume {
   width: 100%;
@@ -760,7 +908,7 @@ main {
   margin: 0 0 20px 0; }
 
 .resume-subheader {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-size: 0.9375em;
   font-weight: 700;
   margin: 30px 0 15px 0;
@@ -779,7 +927,7 @@ main {
 
 .resume-links {
   text-align: center;
-  font-family: "Montserrat", "Open Sans", sans-serif; }
+  font-family: "Montserrat", helvetica, arial, sans-serif; }
 
 .blog-container {
   max-width: 700px;
@@ -820,13 +968,13 @@ main {
   padding-top: 6px;
   padding-right: 8px;
   padding-left: 3px;
-  font-family: "Montserrat", "Open Sans", sans-serif; }
+  font-family: "Montserrat", helvetica, arial, sans-serif; }
   @media screen and (max-width: 31.25em) {
     .blog-entry-text p:first-child:first-letter {
       font-size: 48px; } }
 
 .blog-tags li {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-size: 0.6875em;
   letter-spacing: .04em;
   display: inline-block;
@@ -844,7 +992,7 @@ main {
 .blog-related-links-list {
   padding: 20px 0 0 0; }
   .blog-related-links-list li {
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Montserrat", helvetica, arial, sans-serif;
     text-align: center;
     line-height: 150%;
     padding: 0 0 10px 0;
@@ -884,7 +1032,7 @@ main {
   .blog-pullquote q {
     font-size: 1.125em;
     color: #999;
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Montserrat", helvetica, arial, sans-serif;
     line-height: 160%;
     quotes: "“" "”" "‘" "’"; }
     @media screen and (max-width: 34.375em) {
@@ -895,7 +1043,7 @@ main {
   text-align: center; }
   .content-nav li {
     display: inline-block;
-    font-family: "Montserrat", "Open Sans", sans-serif;
+    font-family: "Montserrat", helvetica, arial, sans-serif;
     font-size: 0.875em; }
     @media screen and (max-width: 25em) {
       .content-nav li {
@@ -914,7 +1062,7 @@ main {
   margin-top: 60px; }
 
 .search-results-header {
-  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-family: "Montserrat", helvetica, arial, sans-serif;
   font-size: 1em;
   margin: 0 0 60px 0;
   border-bottom: 1px solid #999;

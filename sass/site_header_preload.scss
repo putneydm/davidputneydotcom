@@ -184,6 +184,12 @@ box-shadow-blend-mode: multiply;
 	border-radius:2px;
 	display:none;
 	
+		a
+		{
+		background:none;
+		
+		}
+	
 	.button_hidden
 	{
 	display:none;
@@ -197,7 +203,12 @@ box-shadow-blend-mode: multiply;
 	
 .close-box
 	{
-	fill:$med;
+	fill:$aqua;
+	
+		&:hover
+		{
+		fill:$dark_aqua;		
+		}
 	
 	
 	}
@@ -207,6 +218,12 @@ box-shadow-blend-mode: multiply;
 	@extend .secondary-header;
 	top:0;
 	box-shadow:0 0 8px rgba(#999, .8);
+
+		@media screen and (min-width:em(850))
+		{
+		height:80px;
+		padding-top:15px;
+		}
 
 	
 		@media screen and (max-width:em(750)) 

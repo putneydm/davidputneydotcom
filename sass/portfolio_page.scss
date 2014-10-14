@@ -114,6 +114,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 .big-image-module-image-container	
 	{
 	@include spanner_too (12, 1100, 0, 12);
+	margin-bottom:80px;
 	}
 	
 .big-image-module-main
@@ -206,6 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	margin:0 auto;	
 	position:relative;
 	overflow:hidden;
+	margin-bottom:80px;
 	}
 	
 	
@@ -309,10 +311,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	font-weight:700;
 	}
 	
-.triple-module-text
+.triple-module-text-portfolio
 	{
 	font-size:em(16);
-	color:#888;
 	line-height:160%;
 	
 		@media screen and (max-width:em(825)) 
@@ -326,6 +327,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 .sidesaddle-module
 	{
 	@include spanner_too (12, 1100, 0, 12);
+	margin-bottom:80px;
 	}
 	
 .sidesaddle-module-image

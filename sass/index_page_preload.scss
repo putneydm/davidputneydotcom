@@ -426,7 +426,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	font-style:italic;	
 	margin:0 0 15px;
 		
-		@media screen and (max-width:em(825)) 
+		@media screen  and (min-width:em(600)) and (max-width:em(825)) 
 		{
 		font-size:em(18);
 		}
@@ -441,7 +441,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 	
 		@media screen and (max-width:em(825)) 
 		{
-		font-size:em(14);
+		font-size:em(15);
 		}
 	
 	}

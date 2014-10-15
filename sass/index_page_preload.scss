@@ -6,7 +6,7 @@
 	margin:0 auto 0;
 	text-align:center;
 	position:absolute;
-	bottom:25%;
+	bottom:20%;
 	left:0px;
 	right:0px;
 	background-color:$haze;
@@ -193,20 +193,22 @@ ul
 	{
 	width:100%;
 	max-width:1600px;
-	padding:0 0 37%;
+	padding:0 0 45%;
 	margin:0 auto;
 	background-image:url('siteart/pl_hero_index.jpg');
 	background-attachment:fixed;
 	background-size:100% auto;
 	position:relative;
-	min-height:300px;
+	min-height:365px;
+	image-rendering: pixelated; /* only in Chrome Canary */
 	
 		@media screen and (max-width:em(800)) 
 		{
 		height:300px;
-		background-size:auto 300px;
+		background-size:auto 365px;
 		background-position:center top;	
 		background-image:url('siteart/sm_hero_index.jpg');
+		image-rendering: pixelated; /* only in Chrome Canary */
 		}
 	
 	}
